@@ -1,0 +1,915 @@
+2025-05-25 15:52:41,960 |     INFO | Loaded 5 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-25 15:52:41,961 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+2025-05-25 15:52:41,962 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-25 15:52:47,311 |  WARNING | SOLUSD: dataset missing – running back‑fill
+2025-05-25 15:52:47,312 |     INFO | SOLUSD: back‑filling 55 days via /Trades (since=1743450767312174848)
+2025-05-25 16:37:59,237 |     INFO | Loaded 5 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-25 16:37:59,238 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+2025-05-25 16:37:59,239 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-25 16:38:09,101 |  WARNING | SOLUSD: dataset missing – running back‑fill
+2025-05-25 16:38:09,102 |     INFO | SOLUSD: back‑filling 55 days via /Trades (since=1743453489102905600)
+2025-05-25 16:57:11,929 |  WARNING | SOLUSD: filled 3510 empty minute buckets (first gap 2025-03-31T20:38:00 → 2025-03-31T21:18:00)
+2025-05-25 16:57:13,826 |     INFO | SOLUSD: back‑fill complete – 79218 rows written
+2025-05-25 16:57:13,929 |  WARNING | DOGEUSD: dataset missing – running back‑fill
+2025-05-25 16:57:13,930 |     INFO | DOGEUSD: back‑filling 55 days via /Trades (since=1743454633930854912)
+2025-05-25 17:07:13,139 |  WARNING | DOGEUSD: filled 19218 empty minute buckets (first gap 2025-03-31T20:57:00 → 2025-03-31T21:01:00)
+2025-05-25 17:07:15,185 |     INFO | DOGEUSD: back‑fill complete – 79209 rows written
+2025-05-25 17:07:15,237 |  WARNING | LINKUSD: dataset missing – running back‑fill
+2025-05-25 17:07:15,238 |     INFO | LINKUSD: back‑filling 55 days via /Trades (since=1743455235238533376)
+2025-05-25 17:11:50,147 |  WARNING | LINKUSD: filled 35560 empty minute buckets (first gap 2025-03-31T21:08:00 → 2025-03-31T21:09:00)
+2025-05-25 17:11:52,271 |     INFO | LINKUSD: back‑fill complete – 79203 rows written
+2025-05-25 17:11:52,291 |     INFO | ⚙️  XXBTZUSD – training models from XXBTZUSD_55d_1m_13_05_2025.csv
+2025-05-25 17:11:57,047 |     INFO | [XXBTZUSD] class counts 0:7097 1:60239 → weights 0:4.7440 1:0.5589
+2025-05-25 17:13:00,211 |     INFO | [XXBTZUSD] TEST‑set F1 = 0.9595 (gate 0.60)
+2025-05-25 17:13:04,982 |     INFO | Val threshold = 0.5194 (precision 0.897 recall 1.000)
+2025-05-25 17:13:05,269 |     INFO | It's saved!
+2025-05-25 17:13:05,270 |     INFO | XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250525-171304.pkl → F1=0.9595
+2025-05-25 17:13:36,462 |     INFO | XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250525-171304.pkl  prAUC=0.874  pnl=-0.030257  1/1
+2025-05-25 17:13:36,464 |     INFO | 🏅 XXBTZUSD – champion: XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.96036_20250524-170130.pkl
+2025-05-25 17:13:36,465 |     INFO | ⚙️  XETHZUSD – training models from XETHZUSD_55d_1m_13_05_2025.csv
+2025-05-25 17:13:41,205 |     INFO | [XETHZUSD] class counts 0:7582 1:59726 → weights 0:4.4387 1:0.5635
+2025-05-25 17:14:43,449 |     INFO | [XETHZUSD] TEST‑set F1 = 0.0175 (gate 0.60)
+2025-05-25 17:14:48,311 |     INFO | Val threshold = 0.4633 (precision 0.912 recall 1.000)
+2025-05-25 17:14:48,609 |     INFO | It's saved!
+2025-05-25 17:14:48,610 |     INFO | XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.01747_20250525-171448.pkl → F1=0.0175
+2025-05-25 17:14:48,611 |     INFO | XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.01747_20250525-171448.pkl below gate 0.60 – discarded
+2025-05-25 17:14:48,611 |    ERROR | XETHZUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-25 17:14:48,613 |     INFO | ⚙️  SOLUSD – training models from SOLUSD_55d_1m_25_05_2025.csv
+2025-05-25 17:14:51,708 |     INFO | [SOLUSD] class counts 0:5703 1:49735 → weights 0:4.8604 1:0.5573
+2025-05-25 17:16:00,946 |     INFO | [SOLUSD] TEST‑set F1 = 0.9467 (gate 0.60)
+2025-05-25 17:16:05,046 |     INFO | Val threshold = 0.5073 (precision 0.902 recall 1.000)
+2025-05-25 17:16:05,363 |     INFO | It's saved!
+2025-05-25 17:16:05,364 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl → F1=0.9467
+2025-05-25 17:16:23,983 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl  prAUC=0.904  pnl=-0.025959  1/1
+2025-05-25 17:16:23,984 |     INFO | 🏅 SOLUSD – champion: SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl
+2025-05-25 17:16:23,985 |     INFO | ⚙️  DOGEUSD – training models from DOGEUSD_55d_1m_25_05_2025.csv
+2025-05-25 17:16:25,779 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: test split is missing a class
+2025-05-25 17:16:25,780 |    ERROR | DOGEUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-25 17:16:25,781 |     INFO | ⚙️  LINKUSD – training models from LINKUSD_55d_1m_25_05_2025.csv
+2025-05-25 17:16:28,630 |     INFO | [LINKUSD] class counts 0:15535 1:39893 → weights 0:1.7840 1:0.6947
+2025-05-25 17:17:15,437 |     INFO | [LINKUSD] TEST‑set F1 = 0.8687 (gate 0.60)
+2025-05-25 17:17:17,380 |     INFO | Val threshold = 0.4850 (precision 0.808 recall 1.000)
+2025-05-25 17:17:17,521 |     INFO | It's saved!
+2025-05-25 17:17:17,522 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250525-171717.pkl → F1=0.8687
+2025-05-25 17:17:33,743 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250525-171717.pkl  prAUC=0.766  pnl=-0.039686  1/1
+2025-05-25 17:17:33,744 |     INFO | 🏅 LINKUSD – champion: LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250525-171717.pkl
+2025-05-25 17:17:33,744 |     INFO | All DataManager threads stopped
+2025-05-25 17:17:33,745 |    ERROR | 2/5 coins failed – see log for details
+2025-05-25 17:17:33,745 |    ERROR | XETHZUSD: train_and_select returned no models
+2025-05-25 17:17:33,745 |    ERROR | DOGEUSD: train_and_select returned no models
+2025-05-26 00:38:40,766 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 00:38:40,767 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD', 'XRPUSD', 'ADAUSD', 'AVAXUSD', 'LTCUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XMRUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 00:38:40,767 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 00:38:56,437 |  WARNING | XRPUSD: dataset missing – running back‑fill
+2025-05-26 00:38:56,437 |     INFO | XRPUSD: back‑filling 55 days via /Trades (since=1743482336437494784)
+2025-05-26 01:03:57,096 |  WARNING | XRPUSD: filled 1671 empty minute buckets (first gap 2025-04-01T04:39:00 → 2025-04-01T04:46:00)
+2025-05-26 01:03:58,007 |     INFO | XRPUSD: back‑fill complete – 79225 rows written
+2025-05-26 01:03:58,092 |  WARNING | ADAUSD: dataset missing – running back‑fill
+2025-05-26 01:03:58,098 |     INFO | ADAUSD: back‑filling 55 days via /Trades (since=1743483838098050304)
+2025-05-26 01:13:05,256 |  WARNING | ADAUSD: filled 17958 empty minute buckets (first gap 2025-04-01T05:04:00 → 2025-04-01T05:06:00)
+2025-05-26 01:13:06,277 |     INFO | ADAUSD: back‑fill complete – 79209 rows written
+2025-05-26 01:13:06,301 |  WARNING | AVAXUSD: dataset missing – running back‑fill
+2025-05-26 01:13:06,301 |     INFO | AVAXUSD: back‑filling 55 days via /Trades (since=1743484386301246208)
+2025-05-26 01:17:05,813 |  WARNING | AVAXUSD: filled 35972 empty minute buckets (first gap 2025-04-01T05:14:00 → 2025-04-01T05:19:00)
+2025-05-26 01:17:06,739 |     INFO | AVAXUSD: back‑fill complete – 79201 rows written
+2025-05-26 01:17:06,752 |  WARNING | LTCUSD: dataset missing – running back‑fill
+2025-05-26 01:17:06,753 |     INFO | LTCUSD: back‑filling 55 days via /Trades (since=1743484626753474560)
+2025-05-26 01:24:09,035 |  WARNING | LTCUSD: filled 20814 empty minute buckets (first gap 2025-04-01T05:17:00 → 2025-04-01T05:23:00)
+2025-05-26 01:24:09,915 |     INFO | LTCUSD: back‑fill complete – 79205 rows written
+2025-05-26 01:24:11,020 |  WARNING | MATICUSD: dataset missing – running back‑fill
+2025-05-26 01:24:11,020 |     INFO | MATICUSD: back‑filling 55 days via /Trades (since=1743485051020181504)
+2025-05-26 09:25:08,223 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 09:25:08,223 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD', 'XRPUSD', 'ADAUSD', 'AVAXUSD', 'LTCUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XMRUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 09:25:08,224 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 09:25:29,600 |  WARNING | MATICUSD: dataset missing – running back‑fill
+2025-05-26 09:25:29,600 |     INFO | MATICUSD: back‑filling 55 days via /Trades (since=1743513929600844544)
+2025-05-26 15:33:34,183 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 15:33:34,185 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['BTCUSD', 'ETHUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD', 'XRPUSD', 'ADAUSD', 'AVAXUSD', 'LTCUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XMRUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 15:33:34,186 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 15:33:34,187 |  WARNING | BTCUSD: dataset missing – running back‑fill
+2025-05-26 15:33:34,187 |     INFO | BTCUSD: back‑filling 55 days via /Trades (since=1743536014187639040)
+2025-05-26 16:11:55,057 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 16:11:55,058 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['BTCUSD', 'ETHUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD', 'XRPUSD', 'ADAUSD', 'AVAXUSD', 'LTCUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XMRUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 16:11:55,059 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 16:11:55,059 |  WARNING | BTCUSD: dataset missing – running back‑fill
+2025-05-26 16:11:55,059 |     INFO | BTCUSD: back‑filling 55 days via /Trades (since=1743538315059017216)
+2025-05-26 16:44:15,373 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 16:44:15,374 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'ETHUSD', 'SOLUSD', 'XDGSUSD', 'LINKUSD', 'XRPUSD', 'ADAUSD', 'AVAXUSD', 'LTCUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XMRUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 16:44:15,374 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 16:44:18,531 |  WARNING | ETHUSD: dataset missing – running back‑fill
+2025-05-26 16:44:18,531 |     INFO | ETHUSD: back‑filling 55 days via /Trades (since=1743540258531217920)
+2025-05-26 16:51:46,833 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 16:51:46,834 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'XDGUSD', 'LINKUSD', 'XXRPZUSD', 'ADAUSD', 'AVAXUSD', 'XLTCZUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XXMRZUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 16:51:46,834 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 16:52:00,086 |  WARNING | XXRPZUSD: dataset missing – running back‑fill
+2025-05-26 16:52:00,086 |     INFO | XXRPZUSD: back‑filling 55 days via /Trades (since=1743540720086922240)
+2025-05-26 17:17:17,473 |  WARNING | XXRPZUSD: filled 1703 empty minute buckets (first gap 2025-04-01T20:52:00 → 2025-04-01T22:40:00)
+2025-05-26 17:17:18,354 |     INFO | XXRPZUSD: back‑fill complete – 79226 rows written
+2025-05-26 17:17:21,751 |  WARNING | XLTCZUSD: dataset missing – running back‑fill
+2025-05-26 17:17:21,751 |     INFO | XLTCZUSD: back‑filling 55 days via /Trades (since=1743542241751697920)
+2025-05-26 17:24:14,810 |  WARNING | XLTCZUSD: filled 20856 empty minute buckets (first gap 2025-04-01T21:17:00 → 2025-04-01T21:30:00)
+2025-05-26 17:24:15,614 |     INFO | XLTCZUSD: back‑fill complete – 79208 rows written
+2025-05-26 17:24:16,717 |  WARNING | MATICUSD: dataset missing – running back‑fill
+2025-05-26 17:24:16,718 |     INFO | MATICUSD: back‑filling 55 days via /Trades (since=1743542656718258432)
+2025-05-26 17:24:45,191 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 17:24:45,192 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'XDGUSD', 'LINKUSD', 'XXRPZUSD', 'ADAUSD', 'AVAXUSD', 'XLTCZUSD', 'DOTUSD', 'MATICUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XXMRZUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 17:24:45,192 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 17:25:07,141 |  WARNING | MATICUSD: dataset missing – running back‑fill
+2025-05-26 17:25:07,141 |     INFO | MATICUSD: back‑filling 55 days via /Trades (since=1743542707141061376)
+2025-05-26 17:32:37,042 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 17:32:37,043 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'XDGUSD', 'LINKUSD', 'XXRPZUSD', 'ADAUSD', 'AVAXUSD', 'XLTCZUSD', 'DOTUSD', 'POLUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XXMRZUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 17:32:37,043 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 17:32:57,019 |  WARNING | POLUSD: dataset missing – running back‑fill
+2025-05-26 17:32:57,020 |     INFO | POLUSD: back‑filling 55 days via /Trades (since=1743543177020755712)
+2025-05-26 17:33:49,627 |  WARNING | POLUSD: filled 58291 empty minute buckets (first gap 2025-04-01T21:35:00 → 2025-04-01T21:36:00)
+2025-05-26 17:33:50,061 |    ERROR | POLUSD: validation FAILED (Too few rows: 79195 < 79200) – dataset kept for inspection
+2025-05-26 17:33:50,503 |  WARNING | BCHUSD: dataset missing – running back‑fill
+2025-05-26 17:33:50,503 |     INFO | BCHUSD: back‑filling 55 days via /Trades (since=1743543230503441408)
+2025-05-26 17:35:53,039 |  WARNING | BCHUSD: filled 53754 empty minute buckets (first gap 2025-04-01T21:35:00 → 2025-04-01T21:36:00)
+2025-05-26 17:35:53,964 |     INFO | BCHUSD: back‑fill complete – 79201 rows written
+2025-05-26 17:35:53,969 |  WARNING | SHIBUSD: dataset missing – running back‑fill
+2025-05-26 17:35:53,969 |     INFO | SHIBUSD: back‑filling 55 days via /Trades (since=1743543353969924608)
+2025-05-26 17:38:45,926 |  WARNING | SHIBUSD: filled 37119 empty minute buckets (first gap 2025-04-01T21:38:00 → 2025-04-01T21:39:00)
+2025-05-26 17:38:46,864 |     INFO | SHIBUSD: back‑fill complete – 79200 rows written
+2025-05-26 17:38:46,873 |  WARNING | PEPEUSD: dataset missing – running back‑fill
+2025-05-26 17:38:46,874 |     INFO | PEPEUSD: back‑filling 55 days via /Trades (since=1743543526874252288)
+2025-05-26 17:47:47,162 |  WARNING | PEPEUSD: filled 23805 empty minute buckets (first gap 2025-04-01T21:39:00 → 2025-04-01T21:40:00)
+2025-05-26 17:47:48,069 |     INFO | PEPEUSD: back‑fill complete – 79208 rows written
+2025-05-26 17:47:48,090 |  WARNING | XXMRZUSD: dataset missing – running back‑fill
+2025-05-26 17:47:48,090 |     INFO | XXMRZUSD: back‑filling 55 days via /Trades (since=1743544068090579712)
+2025-05-26 17:58:51,281 |  WARNING | XXMRZUSD: filled 28188 empty minute buckets (first gap 2025-04-01T21:48:00 → 2025-04-01T21:49:00)
+2025-05-26 17:58:52,358 |     INFO | XXMRZUSD: back‑fill complete – 79210 rows written
+2025-05-26 17:58:52,389 |  WARNING | STXUSD: dataset missing – running back‑fill
+2025-05-26 17:58:52,389 |     INFO | STXUSD: back‑filling 55 days via /Trades (since=1743544732389773312)
+2025-05-26 17:59:45,303 |  WARNING | STXUSD: filled 65379 empty minute buckets (first gap 2025-04-01T22:14:00 → 2025-04-01T22:15:00)
+2025-05-26 17:59:45,701 |    ERROR | STXUSD: validation FAILED (Too few rows: 79171 < 79200) – dataset kept for inspection
+2025-05-26 17:59:46,132 |  WARNING | OPUSD: dataset missing – running back‑fill
+2025-05-26 17:59:46,133 |     INFO | OPUSD: back‑filling 55 days via /Trades (since=1743544786133050624)
+2025-05-26 18:00:24,230 |  WARNING | OPUSD: filled 67619 empty minute buckets (first gap 2025-04-01T22:30:00 → 2025-04-01T22:31:00)
+2025-05-26 18:00:24,692 |    ERROR | OPUSD: validation FAILED (Too few rows: 79169 < 79200) – dataset kept for inspection
+2025-05-26 18:00:25,102 |  WARNING | SUIUSD: dataset missing – running back‑fill
+2025-05-26 18:00:25,103 |     INFO | SUIUSD: back‑filling 55 days via /Trades (since=1743544825103586816)
+2025-05-26 18:14:52,308 |  WARNING | SUIUSD: filled 17437 empty minute buckets (first gap 2025-04-01T22:01:00 → 2025-04-01T22:02:00)
+2025-05-26 18:14:53,159 |     INFO | SUIUSD: back‑fill complete – 79214 rows written
+2025-05-26 18:14:53,198 |  WARNING | SEIUSD: dataset missing – running back‑fill
+2025-05-26 18:14:53,199 |     INFO | SEIUSD: back‑filling 55 days via /Trades (since=1743545693198361088)
+2025-05-26 18:16:11,624 |  WARNING | SEIUSD: filled 59499 empty minute buckets (first gap 2025-04-01T22:33:00 → 2025-04-01T22:34:00)
+2025-05-26 18:16:11,994 |    ERROR | SEIUSD: validation FAILED (Too few rows: 79181 < 79200) – dataset kept for inspection
+2025-05-26 18:16:12,431 |  WARNING | BONKUSD: dataset missing – running back‑fill
+2025-05-26 18:16:12,432 |     INFO | BONKUSD: back‑filling 55 days via /Trades (since=1743545772432188672)
+2025-05-26 18:20:10,238 |  WARNING | BONKUSD: filled 40444 empty minute buckets (first gap 2025-04-01T22:16:00 → 2025-04-01T22:23:00)
+2025-05-26 18:20:11,238 |     INFO | BONKUSD: back‑fill complete – 79204 rows written
+2025-05-26 18:20:11,248 |  WARNING | INJUSD: dataset missing – running back‑fill
+2025-05-26 18:20:11,249 |     INFO | INJUSD: back‑filling 55 days via /Trades (since=1743546011249610496)
+2025-05-26 18:21:35,362 |  WARNING | INJUSD: filled 56533 empty minute buckets (first gap 2025-04-01T22:21:00 → 2025-04-01T22:22:00)
+2025-05-26 18:21:35,808 |    ERROR | INJUSD: validation FAILED (Too few rows: 79198 < 79200) – dataset kept for inspection
+2025-05-26 18:21:36,219 |  WARNING | JUPUSD: dataset missing – running back‑fill
+2025-05-26 18:21:36,219 |     INFO | JUPUSD: back‑filling 55 days via /Trades (since=1743546096219677952)
+2025-05-26 18:22:32,849 |  WARNING | JUPUSD: filled 61067 empty minute buckets (first gap 2025-04-01T22:21:00 → 2025-04-01T22:22:00)
+2025-05-26 18:22:33,325 |    ERROR | JUPUSD: validation FAILED (Too few rows: 79199 < 79200) – dataset kept for inspection
+2025-05-26 18:22:33,763 |  WARNING | ARBUSD: dataset missing – running back‑fill
+2025-05-26 18:22:33,763 |     INFO | ARBUSD: back‑filling 55 days via /Trades (since=1743546153763002880)
+2025-05-26 18:23:29,002 |  WARNING | ARBUSD: filled 64862 empty minute buckets (first gap 2025-04-01T22:33:00 → 2025-04-01T22:34:00)
+2025-05-26 18:23:29,460 |    ERROR | ARBUSD: validation FAILED (Too few rows: 79184 < 79200) – dataset kept for inspection
+2025-05-26 18:23:29,888 |  WARNING | FILUSD: dataset missing – running back‑fill
+2025-05-26 18:23:29,888 |     INFO | FILUSD: back‑filling 55 days via /Trades (since=1743546209888801280)
+2025-05-26 18:24:19,724 |  WARNING | FILUSD: filled 63516 empty minute buckets (first gap 2025-04-01T22:33:00 → 2025-04-01T22:34:00)
+2025-05-26 18:24:20,169 |    ERROR | FILUSD: validation FAILED (Too few rows: 79185 < 79200) – dataset kept for inspection
+2025-05-26 18:24:20,559 |  WARNING | GALAUSD: dataset missing – running back‑fill
+2025-05-26 18:24:20,560 |     INFO | GALAUSD: back‑filling 55 days via /Trades (since=1743546260560806400)
+2025-05-26 18:25:29,648 |  WARNING | GALAUSD: filled 62625 empty minute buckets (first gap 2025-04-01T22:33:00 → 2025-04-01T22:34:00)
+2025-05-26 18:25:30,122 |    ERROR | GALAUSD: validation FAILED (Too few rows: 79181 < 79200) – dataset kept for inspection
+2025-05-26 18:25:30,543 |     INFO | ⚙️  XXBTZUSD – training models from XXBTZUSD_55d_1m_13_05_2025.csv
+2025-05-26 18:25:32,453 |     INFO | [XXBTZUSD] class counts 0:7097 1:60239 → weights 0:4.7440 1:0.5589
+2025-05-26 18:26:04,580 |     INFO | [XXBTZUSD] TEST‑set F1 = 0.9595 (gate 0.60)
+2025-05-26 18:26:07,044 |     INFO | Val threshold = 0.5194 (precision 0.897 recall 1.000)
+2025-05-26 18:26:07,240 |     INFO | It's saved!
+2025-05-26 18:26:07,240 |     INFO | XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250526-182607.pkl → F1=0.9595
+2025-05-26 18:26:23,237 |     INFO | XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250526-182607.pkl  prAUC=0.874  pnl=-0.030257  1/1
+2025-05-26 18:26:23,239 |     INFO | 🏅 XXBTZUSD – champion: XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.96036_20250524-170130.pkl
+2025-05-26 18:26:23,239 |     INFO | ⚙️  XETHZUSD – training models from XETHZUSD_55d_1m_13_05_2025.csv
+2025-05-26 18:26:24,911 |     INFO | [XETHZUSD] class counts 0:7582 1:59726 → weights 0:4.4387 1:0.5635
+2025-05-26 18:26:58,108 |     INFO | [XETHZUSD] TEST‑set F1 = 0.0175 (gate 0.60)
+2025-05-26 18:27:00,639 |     INFO | Val threshold = 0.4633 (precision 0.912 recall 1.000)
+2025-05-26 18:27:00,767 |     INFO | It's saved!
+2025-05-26 18:27:00,768 |     INFO | XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.01747_20250526-182700.pkl → F1=0.0175
+2025-05-26 18:27:00,768 |     INFO | XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.01747_20250526-182700.pkl below gate 0.60 – discarded
+2025-05-26 18:27:00,768 |    ERROR | XETHZUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:27:00,770 |     INFO | ⚙️  SOLUSD – training models from SOLUSD_55d_1m_25_05_2025.csv
+2025-05-26 18:27:02,263 |     INFO | [SOLUSD] class counts 0:5703 1:49735 → weights 0:4.8604 1:0.5573
+2025-05-26 18:27:37,938 |     INFO | [SOLUSD] TEST‑set F1 = 0.9467 (gate 0.60)
+2025-05-26 18:27:39,808 |     INFO | Val threshold = 0.5073 (precision 0.902 recall 1.000)
+2025-05-26 18:27:39,918 |     INFO | It's saved!
+2025-05-26 18:27:39,918 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250526-182739.pkl → F1=0.9467
+2025-05-26 18:27:54,734 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250526-182739.pkl  prAUC=0.904  pnl=-0.025959  1/1
+2025-05-26 18:27:54,735 |     INFO | 🏅 SOLUSD – champion: SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl
+2025-05-26 18:27:54,736 |     INFO | ⚙️  XDGUSD – training models from XDGUSD_55d_1m_14_05_2025.csv
+2025-05-26 18:27:56,400 |     INFO | [XDGUSD] class counts 0:66259 1:29 → weights 0:0.5002 1:1142.8966
+2025-05-26 18:28:28,212 |     INFO | [XDGUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:28:30,421 |     INFO | Val threshold = 0.0075 (precision 0.039 recall 0.353)
+2025-05-26 18:28:30,559 |     INFO | It's saved!
+2025-05-26 18:28:30,560 |     INFO | XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-182830.pkl → F1=0.0000
+2025-05-26 18:28:30,560 |     INFO | XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-182830.pkl below gate 0.60 – discarded
+2025-05-26 18:28:30,561 |    ERROR | XDGUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:28:30,561 |     INFO | ⚙️  LINKUSD – training models from LINKUSD_55d_1m_25_05_2025.csv
+2025-05-26 18:28:32,068 |     INFO | [LINKUSD] class counts 0:15535 1:39893 → weights 0:1.7840 1:0.6947
+2025-05-26 18:29:15,368 |     INFO | [LINKUSD] TEST‑set F1 = 0.8687 (gate 0.60)
+2025-05-26 18:29:17,188 |     INFO | Val threshold = 0.4850 (precision 0.808 recall 1.000)
+2025-05-26 18:29:17,369 |     INFO | It's saved!
+2025-05-26 18:29:17,371 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250526-182917.pkl → F1=0.8687
+2025-05-26 18:29:32,501 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250526-182917.pkl  prAUC=0.766  pnl=-0.039686  1/1
+2025-05-26 18:29:32,503 |     INFO | 🏅 LINKUSD – champion: LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250525-171717.pkl
+2025-05-26 18:29:32,503 |     INFO | ⚙️  XXRPZUSD – training models from XXRPZUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:29:33,861 |     INFO | [XXRPZUSD] class counts 0:40613 1:14831 → weights 0:0.6826 1:1.8692
+2025-05-26 18:30:08,853 |     INFO | [XXRPZUSD] TEST‑set F1 = 0.3979 (gate 0.60)
+2025-05-26 18:30:10,821 |     INFO | Val threshold = 0.4646 (precision 0.421 recall 0.920)
+2025-05-26 18:30:10,936 |     INFO | It's saved!
+2025-05-26 18:30:10,936 |     INFO | XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-183010.pkl → F1=0.3979
+2025-05-26 18:30:10,936 |     INFO | XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-183010.pkl below gate 0.60 – discarded
+2025-05-26 18:30:10,937 |    ERROR | XXRPZUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:30:10,938 |     INFO | ⚙️  ADAUSD – training models from ADAUSD_25d_1m_26_05_2025.csv
+2025-05-26 18:30:11,642 |     INFO | [ADAUSD] class counts 0:23794 1:1394 → weights 0:0.5293 1:9.0344
+2025-05-26 18:30:23,724 |     INFO | [ADAUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:30:24,627 |     INFO | Val threshold = 0.1951 (precision 0.037 recall 0.972)
+2025-05-26 18:30:24,684 |     INFO | It's saved!
+2025-05-26 18:30:24,684 |     INFO | ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183024.pkl → F1=0.0000
+2025-05-26 18:30:24,684 |     INFO | ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183024.pkl below gate 0.60 – discarded
+2025-05-26 18:30:24,684 |    ERROR | ADAUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:30:24,685 |     INFO | ⚙️  AVAXUSD – training models from AVAXUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:30:26,092 |     INFO | [AVAXUSD] class counts 0:12168 1:43258 → weights 0:2.2775 1:0.6406
+2025-05-26 18:30:53,170 |     INFO | [AVAXUSD] TEST‑set F1 = 0.9040 (gate 0.60)
+2025-05-26 18:30:55,161 |     INFO | Val threshold = 0.5141 (precision 0.836 recall 1.000)
+2025-05-26 18:30:55,273 |     INFO | It's saved!
+2025-05-26 18:30:55,274 |     INFO | AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl → F1=0.9040
+2025-05-26 18:31:10,622 |     INFO | AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  prAUC=0.844  pnl=+0.018898  1/1
+2025-05-26 18:31:10,623 |     INFO | 🏅 AVAXUSD – champion: AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl
+2025-05-26 18:31:10,624 |     INFO | ⚙️  XLTCZUSD – training models from XLTCZUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:31:12,048 |     INFO | [XLTCZUSD] class counts 0:7706 1:47725 → weights 0:3.5966 1:0.5807
+2025-05-26 18:31:38,967 |     INFO | [XLTCZUSD] TEST‑set F1 = 0.9288 (gate 0.60)
+2025-05-26 18:31:41,011 |     INFO | Val threshold = 0.5703 (precision 0.875 recall 1.000)
+2025-05-26 18:31:41,118 |     INFO | It's saved!
+2025-05-26 18:31:41,118 |     INFO | XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-183141.pkl → F1=0.9288
+2025-05-26 18:31:57,142 |     INFO | XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-183141.pkl  prAUC=0.859  pnl=-0.002409  1/1
+2025-05-26 18:31:57,143 |     INFO | 🏅 XLTCZUSD – champion: XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-183141.pkl
+2025-05-26 18:31:57,144 |     INFO | ⚙️  DOTUSD – training models from DOTUSD_25d_1m_26_05_2025.csv
+2025-05-26 18:31:57,865 |     INFO | [DOTUSD] class counts 0:11199 1:13987 → weights 0:1.1245 1:0.9003
+2025-05-26 18:32:10,265 |     INFO | [DOTUSD] TEST‑set F1 = 0.6460 (gate 0.60)
+2025-05-26 18:32:11,205 |     INFO | Val threshold = 0.5145 (precision 0.595 recall 1.000)
+2025-05-26 18:32:11,261 |     INFO | It's saved!
+2025-05-26 18:32:11,262 |     INFO | DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-183211.pkl → F1=0.6460
+2025-05-26 18:32:27,535 |     INFO | DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-183211.pkl  prAUC=0.483  pnl=+0.005477  1/1
+2025-05-26 18:32:27,536 |     INFO | 🏅 DOTUSD – champion: DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-183211.pkl
+2025-05-26 18:32:27,537 |     INFO | ⚙️  POLUSD – training models from POLUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:32:28,999 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:32:28,999 |    ERROR | POLUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:32:29,000 |     INFO | ⚙️  BCHUSD – training models from BCHUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:32:30,377 |     INFO | [BCHUSD] class counts 0:12208 1:43218 → weights 0:2.2701 1:0.6412
+2025-05-26 18:33:13,277 |     INFO | [BCHUSD] TEST‑set F1 = 0.8757 (gate 0.60)
+2025-05-26 18:33:15,277 |     INFO | Val threshold = 0.5579 (precision 0.789 recall 1.000)
+2025-05-26 18:33:15,393 |     INFO | It's saved!
+2025-05-26 18:33:15,393 |     INFO | BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl → F1=0.8757
+2025-05-26 18:33:31,277 |     INFO | BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl  prAUC=0.804  pnl=-0.011109  1/1
+2025-05-26 18:33:31,278 |     INFO | 🏅 BCHUSD – champion: BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl
+2025-05-26 18:33:31,279 |     INFO | ⚙️  SHIBUSD – training models from SHIBUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:33:32,708 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:33:32,709 |    ERROR | SHIBUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:33:32,710 |     INFO | ⚙️  PEPEUSD – training models from PEPEUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:33:34,044 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:33:34,044 |    ERROR | PEPEUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:33:34,046 |     INFO | ⚙️  XXMRZUSD – training models from XXMRZUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:33:35,471 |     INFO | [XXMRZUSD] class counts 0:6718 1:48715 → weights 0:4.1257 1:0.5690
+2025-05-26 18:34:02,856 |     INFO | [XXMRZUSD] TEST‑set F1 = 0.8817 (gate 0.60)
+2025-05-26 18:34:04,948 |     INFO | Val threshold = 0.5209 (precision 0.899 recall 1.000)
+2025-05-26 18:34:05,060 |     INFO | It's saved!
+2025-05-26 18:34:05,061 |     INFO | XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-183404.pkl → F1=0.8817
+2025-05-26 18:34:21,951 |     INFO | XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-183404.pkl  prAUC=0.905  pnl=-0.051764  1/1
+2025-05-26 18:34:21,953 |     INFO | 🏅 XXMRZUSD – champion: XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-183404.pkl
+2025-05-26 18:34:21,953 |     INFO | ⚙️  STXUSD – training models from STXUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:34:23,395 |     INFO | [STXUSD] class counts 0:50830 1:4575 → weights 0:0.5450 1:6.0552
+2025-05-26 18:34:50,150 |     INFO | [STXUSD] TEST‑set F1 = 0.1749 (gate 0.60)
+2025-05-26 18:34:52,190 |     INFO | Val threshold = 0.5511 (precision 0.117 recall 0.897)
+2025-05-26 18:34:52,295 |     INFO | It's saved!
+2025-05-26 18:34:52,295 |     INFO | STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250526-183452.pkl → F1=0.1749
+2025-05-26 18:34:52,295 |     INFO | STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250526-183452.pkl below gate 0.60 – discarded
+2025-05-26 18:34:52,296 |    ERROR | STXUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:34:52,297 |     INFO | ⚙️  OPUSD – training models from OPUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:34:53,712 |     INFO | [OPUSD] class counts 0:52798 1:2606 → weights 0:0.5247 1:10.6301
+2025-05-26 18:35:28,770 |     INFO | [OPUSD] TEST‑set F1 = 0.1754 (gate 0.60)
+2025-05-26 18:35:30,676 |     INFO | Val threshold = 0.5013 (precision 0.162 recall 1.000)
+2025-05-26 18:35:30,798 |     INFO | It's saved!
+2025-05-26 18:35:30,799 |     INFO | OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250526-183530.pkl → F1=0.1754
+2025-05-26 18:35:30,799 |     INFO | OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250526-183530.pkl below gate 0.60 – discarded
+2025-05-26 18:35:30,799 |    ERROR | OPUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:35:30,800 |     INFO | ⚙️  SUIUSD – training models from SUIUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:35:32,259 |     INFO | [SUIUSD] class counts 0:26662 1:28773 → weights 0:1.0396 1:0.9633
+2025-05-26 18:35:59,092 |     INFO | [SUIUSD] TEST‑set F1 = 0.7346 (gate 0.60)
+2025-05-26 18:36:01,026 |     INFO | Val threshold = 0.5794 (precision 0.635 recall 1.000)
+2025-05-26 18:36:01,138 |     INFO | It's saved!
+2025-05-26 18:36:01,138 |     INFO | SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl → F1=0.7346
+2025-05-26 18:36:17,332 |     INFO | SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl  prAUC=0.643  pnl=-0.045161  1/1
+2025-05-26 18:36:17,334 |     INFO | 🏅 SUIUSD – champion: SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl
+2025-05-26 18:36:17,334 |     INFO | ⚙️  SEIUSD – training models from SEIUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:36:18,799 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: test split is missing a class
+2025-05-26 18:36:18,800 |    ERROR | SEIUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:36:18,801 |     INFO | ⚙️  BONKUSD – training models from BONKUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:36:20,144 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:36:20,145 |    ERROR | BONKUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:36:20,146 |     INFO | ⚙️  INJUSD – training models from INJUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:36:21,570 |     INFO | [INJUSD] class counts 0:21824 1:33600 → weights 0:1.2698 1:0.8248
+2025-05-26 18:36:48,730 |     INFO | [INJUSD] TEST‑set F1 = 0.8247 (gate 0.60)
+2025-05-26 18:36:50,573 |     INFO | Val threshold = 0.6255 (precision 0.713 recall 1.000)
+2025-05-26 18:36:50,685 |     INFO | It's saved!
+2025-05-26 18:36:50,686 |     INFO | INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl → F1=0.8247
+2025-05-26 18:37:06,580 |     INFO | INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl  prAUC=0.693  pnl=+0.168397  1/1
+2025-05-26 18:37:06,582 |     INFO | 🏅 INJUSD – champion: INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl
+2025-05-26 18:37:06,582 |     INFO | ⚙️  JUPUSD – training models from JUPUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:37:08,014 |     INFO | [JUPUSD] class counts 0:54618 1:807 → weights 0:0.5074 1:34.3401
+2025-05-26 18:37:35,083 |     INFO | [JUPUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:37:37,092 |     INFO | Val threshold = 0.3028 (precision 0.057 recall 0.948)
+2025-05-26 18:37:37,207 |     INFO | It's saved!
+2025-05-26 18:37:37,207 |     INFO | JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183737.pkl → F1=0.0000
+2025-05-26 18:37:37,207 |     INFO | JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183737.pkl below gate 0.60 – discarded
+2025-05-26 18:37:37,207 |    ERROR | JUPUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:37:37,209 |     INFO | ⚙️  ARBUSD – training models from ARBUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:37:38,663 |     INFO | [ARBUSD] class counts 0:55209 1:205 → weights 0:0.5019 1:135.1561
+2025-05-26 18:38:04,855 |     INFO | [ARBUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:38:06,807 |     INFO | Val threshold = 0.0501 (precision 0.130 recall 0.293)
+2025-05-26 18:38:06,915 |     INFO | It's saved!
+2025-05-26 18:38:06,915 |     INFO | ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183806.pkl → F1=0.0000
+2025-05-26 18:38:06,915 |     INFO | ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183806.pkl below gate 0.60 – discarded
+2025-05-26 18:38:06,916 |    ERROR | ARBUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:38:06,917 |     INFO | ⚙️  FILUSD – training models from FILUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:38:08,327 |     INFO | [FILUSD] class counts 0:38910 1:16505 → weights 0:0.7121 1:1.6787
+2025-05-26 18:39:16,732 |     INFO | [FILUSD] TEST‑set F1 = 0.3965 (gate 0.60)
+2025-05-26 18:39:18,669 |     INFO | Val threshold = 0.4450 (precision 0.414 recall 1.000)
+2025-05-26 18:39:18,804 |     INFO | It's saved!
+2025-05-26 18:39:18,805 |     INFO | FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250526-183918.pkl → F1=0.3965
+2025-05-26 18:39:18,805 |     INFO | FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250526-183918.pkl below gate 0.60 – discarded
+2025-05-26 18:39:18,806 |    ERROR | FILUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:39:18,807 |     INFO | ⚙️  GALAUSD – training models from GALAUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:39:20,345 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:39:20,346 |    ERROR | GALAUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:39:20,346 |     INFO | All DataManager threads stopped
+2025-05-26 18:39:20,346 |    ERROR | 15/25 coins failed – see log for details
+2025-05-26 18:39:20,347 |    ERROR | XETHZUSD: train_and_select returned no models
+2025-05-26 18:39:20,347 |    ERROR | XDGUSD: train_and_select returned no models
+2025-05-26 18:39:20,347 |    ERROR | XXRPZUSD: train_and_select returned no models
+2025-05-26 18:39:20,347 |    ERROR | ADAUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | POLUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | SHIBUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | PEPEUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | STXUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | OPUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | SEIUSD: train_and_select returned no models
+2025-05-26 18:39:20,348 |    ERROR | BONKUSD: train_and_select returned no models
+2025-05-26 18:39:20,349 |    ERROR | JUPUSD: train_and_select returned no models
+2025-05-26 18:39:20,349 |    ERROR | ARBUSD: train_and_select returned no models
+2025-05-26 18:39:20,349 |    ERROR | FILUSD: train_and_select returned no models
+2025-05-26 18:39:20,349 |    ERROR | GALAUSD: train_and_select returned no models
+2025-05-26 18:41:06,891 |     INFO | Loaded 25 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-05-26 18:41:06,892 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'XDGUSD', 'LINKUSD', 'XXRPZUSD', 'ADAUSD', 'AVAXUSD', 'XLTCZUSD', 'DOTUSD', 'POLUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XXMRZUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-05-26 18:41:06,892 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-05-26 18:42:02,229 |     INFO | ⚙️  XXBTZUSD – training models from XXBTZUSD_55d_1m_13_05_2025.csv
+2025-05-26 18:42:04,174 |     INFO | [XXBTZUSD] class counts 0:7097 1:60239 → weights 0:4.7440 1:0.5589
+2025-05-26 18:42:36,960 |     INFO | [XXBTZUSD] TEST‑set F1 = 0.9595 (gate 0.60)
+2025-05-26 18:42:39,620 |     INFO | Val threshold = 0.5194 (precision 0.897 recall 1.000)
+2025-05-26 18:42:39,823 |     INFO | It's saved!
+2025-05-26 18:42:39,823 |     INFO | XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250526-184239.pkl → F1=0.9595
+2025-05-26 18:42:57,065 |     INFO | XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250526-184239.pkl  prAUC=0.874  pnl=-0.030257  1/1
+2025-05-26 18:42:57,066 |     INFO | 🏅 XXBTZUSD – champion: XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.96036_20250524-170130.pkl
+2025-05-26 18:42:57,067 |     INFO | ⚙️  XETHZUSD – training models from XETHZUSD_55d_1m_13_05_2025.csv
+2025-05-26 18:42:58,811 |     INFO | [XETHZUSD] class counts 0:7582 1:59726 → weights 0:4.4387 1:0.5635
+2025-05-26 18:43:31,224 |     INFO | [XETHZUSD] TEST‑set F1 = 0.0175 (gate 0.60)
+2025-05-26 18:43:33,686 |     INFO | Val threshold = 0.4633 (precision 0.912 recall 1.000)
+2025-05-26 18:43:33,818 |     INFO | It's saved!
+2025-05-26 18:43:33,818 |     INFO | XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.01747_20250526-184333.pkl → F1=0.0175
+2025-05-26 18:43:33,819 |     INFO | XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.01747_20250526-184333.pkl below gate 0.60 – discarded
+2025-05-26 18:43:33,820 |    ERROR | XETHZUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:43:33,822 |     INFO | ⚙️  SOLUSD – training models from SOLUSD_55d_1m_25_05_2025.csv
+2025-05-26 18:43:35,314 |     INFO | [SOLUSD] class counts 0:5703 1:49735 → weights 0:4.8604 1:0.5573
+2025-05-26 18:44:10,569 |     INFO | [SOLUSD] TEST‑set F1 = 0.9467 (gate 0.60)
+2025-05-26 18:44:12,645 |     INFO | Val threshold = 0.5073 (precision 0.902 recall 1.000)
+2025-05-26 18:44:12,763 |     INFO | It's saved!
+2025-05-26 18:44:12,763 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250526-184412.pkl → F1=0.9467
+2025-05-26 18:44:29,060 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250526-184412.pkl  prAUC=0.904  pnl=-0.025959  1/1
+2025-05-26 18:44:29,061 |     INFO | 🏅 SOLUSD – champion: SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl
+2025-05-26 18:44:29,062 |     INFO | ⚙️  XDGUSD – training models from XDGUSD_55d_1m_14_05_2025.csv
+2025-05-26 18:44:30,716 |     INFO | [XDGUSD] class counts 0:66259 1:29 → weights 0:0.5002 1:1142.8966
+2025-05-26 18:45:02,968 |     INFO | [XDGUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:45:05,321 |     INFO | Val threshold = 0.0075 (precision 0.039 recall 0.353)
+2025-05-26 18:45:05,451 |     INFO | It's saved!
+2025-05-26 18:45:05,451 |     INFO | XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184505.pkl → F1=0.0000
+2025-05-26 18:45:05,452 |     INFO | XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184505.pkl below gate 0.60 – discarded
+2025-05-26 18:45:05,452 |    ERROR | XDGUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:45:05,453 |     INFO | ⚙️  LINKUSD – training models from LINKUSD_55d_1m_25_05_2025.csv
+2025-05-26 18:45:06,879 |     INFO | [LINKUSD] class counts 0:15535 1:39893 → weights 0:1.7840 1:0.6947
+2025-05-26 18:45:51,976 |     INFO | [LINKUSD] TEST‑set F1 = 0.8687 (gate 0.60)
+2025-05-26 18:45:54,199 |     INFO | Val threshold = 0.4850 (precision 0.808 recall 1.000)
+2025-05-26 18:45:54,322 |     INFO | It's saved!
+2025-05-26 18:45:54,323 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250526-184554.pkl → F1=0.8687
+2025-05-26 18:46:10,546 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250526-184554.pkl  prAUC=0.766  pnl=-0.039686  1/1
+2025-05-26 18:46:10,548 |     INFO | 🏅 LINKUSD – champion: LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250525-171717.pkl
+2025-05-26 18:46:10,548 |     INFO | ⚙️  XXRPZUSD – training models from XXRPZUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:46:12,069 |     INFO | [XXRPZUSD] class counts 0:40613 1:14831 → weights 0:0.6826 1:1.8692
+2025-05-26 18:46:48,083 |     INFO | [XXRPZUSD] TEST‑set F1 = 0.3979 (gate 0.60)
+2025-05-26 18:46:50,255 |     INFO | Val threshold = 0.4646 (precision 0.421 recall 0.920)
+2025-05-26 18:46:50,378 |     INFO | It's saved!
+2025-05-26 18:46:50,379 |     INFO | XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-184650.pkl → F1=0.3979
+2025-05-26 18:46:50,379 |     INFO | XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-184650.pkl below gate 0.60 – discarded
+2025-05-26 18:46:50,379 |    ERROR | XXRPZUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:46:50,381 |     INFO | ⚙️  ADAUSD – training models from ADAUSD_25d_1m_26_05_2025.csv
+2025-05-26 18:46:51,092 |     INFO | [ADAUSD] class counts 0:23794 1:1394 → weights 0:0.5293 1:9.0344
+2025-05-26 18:47:03,351 |     INFO | [ADAUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:47:04,424 |     INFO | Val threshold = 0.1951 (precision 0.037 recall 0.972)
+2025-05-26 18:47:04,479 |     INFO | It's saved!
+2025-05-26 18:47:04,480 |     INFO | ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184704.pkl → F1=0.0000
+2025-05-26 18:47:04,480 |     INFO | ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184704.pkl below gate 0.60 – discarded
+2025-05-26 18:47:04,480 |    ERROR | ADAUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:47:04,481 |     INFO | ⚙️  AVAXUSD – training models from AVAXUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:47:06,002 |     INFO | [AVAXUSD] class counts 0:12168 1:43258 → weights 0:2.2775 1:0.6406
+2025-05-26 18:47:33,690 |     INFO | [AVAXUSD] TEST‑set F1 = 0.9040 (gate 0.60)
+2025-05-26 18:47:35,865 |     INFO | Val threshold = 0.5141 (precision 0.836 recall 1.000)
+2025-05-26 18:47:35,969 |     INFO | It's saved!
+2025-05-26 18:47:35,970 |     INFO | AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-184735.pkl → F1=0.9040
+2025-05-26 18:47:52,893 |     INFO | AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-184735.pkl  prAUC=0.844  pnl=+0.018898  1/1
+2025-05-26 18:47:52,895 |     INFO | 🏅 AVAXUSD – champion: AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl
+2025-05-26 18:47:52,895 |     INFO | ⚙️  XLTCZUSD – training models from XLTCZUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:47:54,351 |     INFO | [XLTCZUSD] class counts 0:7706 1:47725 → weights 0:3.5966 1:0.5807
+2025-05-26 18:48:21,106 |     INFO | [XLTCZUSD] TEST‑set F1 = 0.9288 (gate 0.60)
+2025-05-26 18:48:23,275 |     INFO | Val threshold = 0.5703 (precision 0.875 recall 1.000)
+2025-05-26 18:48:23,385 |     INFO | It's saved!
+2025-05-26 18:48:23,386 |     INFO | XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-184823.pkl → F1=0.9288
+2025-05-26 18:48:39,360 |     INFO | XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-184823.pkl  prAUC=0.859  pnl=-0.002409  1/1
+2025-05-26 18:48:39,361 |     INFO | 🏅 XLTCZUSD – champion: XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-183141.pkl
+2025-05-26 18:48:39,362 |     INFO | ⚙️  DOTUSD – training models from DOTUSD_25d_1m_26_05_2025.csv
+2025-05-26 18:48:40,014 |     INFO | [DOTUSD] class counts 0:11199 1:13987 → weights 0:1.1245 1:0.9003
+2025-05-26 18:48:50,777 |     INFO | [DOTUSD] TEST‑set F1 = 0.6460 (gate 0.60)
+2025-05-26 18:48:51,540 |     INFO | Val threshold = 0.5145 (precision 0.595 recall 1.000)
+2025-05-26 18:48:51,588 |     INFO | It's saved!
+2025-05-26 18:48:51,589 |     INFO | DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-184851.pkl → F1=0.6460
+2025-05-26 18:49:07,239 |     INFO | DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-184851.pkl  prAUC=0.483  pnl=+0.005477  1/1
+2025-05-26 18:49:07,240 |     INFO | 🏅 DOTUSD – champion: DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-183211.pkl
+2025-05-26 18:49:07,241 |     INFO | ⚙️  POLUSD – training models from POLUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:49:08,677 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:49:08,678 |    ERROR | POLUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:49:08,679 |     INFO | ⚙️  BCHUSD – training models from BCHUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:49:10,103 |     INFO | [BCHUSD] class counts 0:12208 1:43218 → weights 0:2.2701 1:0.6412
+2025-05-26 18:49:53,463 |     INFO | [BCHUSD] TEST‑set F1 = 0.8757 (gate 0.60)
+2025-05-26 18:49:55,621 |     INFO | Val threshold = 0.5579 (precision 0.789 recall 1.000)
+2025-05-26 18:49:55,741 |     INFO | It's saved!
+2025-05-26 18:49:55,742 |     INFO | BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-184955.pkl → F1=0.8757
+2025-05-26 18:50:12,907 |     INFO | BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-184955.pkl  prAUC=0.804  pnl=-0.011109  1/1
+2025-05-26 18:50:12,909 |     INFO | 🏅 BCHUSD – champion: BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl
+2025-05-26 18:50:12,910 |     INFO | ⚙️  SHIBUSD – training models from SHIBUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:50:14,353 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:50:14,353 |    ERROR | SHIBUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:50:14,354 |     INFO | ⚙️  PEPEUSD – training models from PEPEUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:50:15,715 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:50:15,715 |    ERROR | PEPEUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:50:15,716 |     INFO | ⚙️  XXMRZUSD – training models from XXMRZUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:50:17,122 |     INFO | [XXMRZUSD] class counts 0:6718 1:48715 → weights 0:4.1257 1:0.5690
+2025-05-26 18:50:44,689 |     INFO | [XXMRZUSD] TEST‑set F1 = 0.8817 (gate 0.60)
+2025-05-26 18:50:46,937 |     INFO | Val threshold = 0.5209 (precision 0.899 recall 1.000)
+2025-05-26 18:50:47,047 |     INFO | It's saved!
+2025-05-26 18:50:47,047 |     INFO | XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-185046.pkl → F1=0.8817
+2025-05-26 18:51:07,258 |     INFO | XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-185046.pkl  prAUC=0.905  pnl=-0.051764  1/1
+2025-05-26 18:51:07,260 |     INFO | 🏅 XXMRZUSD – champion: XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-183404.pkl
+2025-05-26 18:51:07,261 |     INFO | ⚙️  STXUSD – training models from STXUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:51:08,415 |     INFO | [STXUSD] class counts 0:50830 1:4575 → weights 0:0.5450 1:6.0552
+2025-05-26 18:51:35,127 |     INFO | [STXUSD] TEST‑set F1 = 0.1749 (gate 0.60)
+2025-05-26 18:51:37,151 |     INFO | Val threshold = 0.5511 (precision 0.117 recall 0.897)
+2025-05-26 18:51:37,263 |     INFO | It's saved!
+2025-05-26 18:51:37,264 |     INFO | STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250526-185137.pkl → F1=0.1749
+2025-05-26 18:51:37,264 |     INFO | STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250526-185137.pkl below gate 0.60 – discarded
+2025-05-26 18:51:37,264 |    ERROR | STXUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:51:37,265 |     INFO | ⚙️  OPUSD – training models from OPUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:51:38,735 |     INFO | [OPUSD] class counts 0:52798 1:2606 → weights 0:0.5247 1:10.6301
+2025-05-26 18:52:14,377 |     INFO | [OPUSD] TEST‑set F1 = 0.1754 (gate 0.60)
+2025-05-26 18:52:16,541 |     INFO | Val threshold = 0.5013 (precision 0.162 recall 1.000)
+2025-05-26 18:52:16,666 |     INFO | It's saved!
+2025-05-26 18:52:16,666 |     INFO | OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250526-185216.pkl → F1=0.1754
+2025-05-26 18:52:16,667 |     INFO | OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250526-185216.pkl below gate 0.60 – discarded
+2025-05-26 18:52:16,667 |    ERROR | OPUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:52:16,668 |     INFO | ⚙️  SUIUSD – training models from SUIUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:52:18,107 |     INFO | [SUIUSD] class counts 0:26662 1:28773 → weights 0:1.0396 1:0.9633
+2025-05-26 18:52:45,190 |     INFO | [SUIUSD] TEST‑set F1 = 0.7346 (gate 0.60)
+2025-05-26 18:52:47,207 |     INFO | Val threshold = 0.5794 (precision 0.635 recall 1.000)
+2025-05-26 18:52:47,314 |     INFO | It's saved!
+2025-05-26 18:52:47,314 |     INFO | SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-185247.pkl → F1=0.7346
+2025-05-26 18:53:03,076 |     INFO | SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-185247.pkl  prAUC=0.643  pnl=-0.045161  1/1
+2025-05-26 18:53:03,078 |     INFO | 🏅 SUIUSD – champion: SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl
+2025-05-26 18:53:03,079 |     INFO | ⚙️  SEIUSD – training models from SEIUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:53:04,537 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: test split is missing a class
+2025-05-26 18:53:04,538 |    ERROR | SEIUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:53:04,539 |     INFO | ⚙️  BONKUSD – training models from BONKUSD_55d_1m_26_05_2025.csv
+2025-05-26 18:53:05,881 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:53:05,882 |    ERROR | BONKUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:53:05,883 |     INFO | ⚙️  INJUSD – training models from INJUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:53:07,250 |     INFO | [INJUSD] class counts 0:21824 1:33600 → weights 0:1.2698 1:0.8248
+2025-05-26 18:53:31,344 |     INFO | [INJUSD] TEST‑set F1 = 0.8247 (gate 0.60)
+2025-05-26 18:53:32,761 |     INFO | Val threshold = 0.6255 (precision 0.713 recall 1.000)
+2025-05-26 18:53:32,860 |     INFO | It's saved!
+2025-05-26 18:53:32,860 |     INFO | INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-185332.pkl → F1=0.8247
+2025-05-26 18:53:47,708 |     INFO | INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-185332.pkl  prAUC=0.693  pnl=+0.168397  1/1
+2025-05-26 18:53:47,709 |     INFO | 🏅 INJUSD – champion: INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl
+2025-05-26 18:53:47,710 |     INFO | ⚙️  JUPUSD – training models from JUPUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:53:49,171 |     INFO | [JUPUSD] class counts 0:54618 1:807 → weights 0:0.5074 1:34.3401
+2025-05-26 18:54:16,793 |     INFO | [JUPUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:54:18,964 |     INFO | Val threshold = 0.3028 (precision 0.057 recall 0.948)
+2025-05-26 18:54:19,084 |     INFO | It's saved!
+2025-05-26 18:54:19,085 |     INFO | JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-185418.pkl → F1=0.0000
+2025-05-26 18:54:19,086 |     INFO | JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-185418.pkl below gate 0.60 – discarded
+2025-05-26 18:54:19,086 |    ERROR | JUPUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:54:19,087 |     INFO | ⚙️  ARBUSD – training models from ARBUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:54:20,651 |     INFO | [ARBUSD] class counts 0:55209 1:205 → weights 0:0.5019 1:135.1561
+2025-05-26 18:54:47,903 |     INFO | [ARBUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-05-26 18:54:50,014 |     INFO | Val threshold = 0.0501 (precision 0.130 recall 0.293)
+2025-05-26 18:54:50,125 |     INFO | It's saved!
+2025-05-26 18:54:50,125 |     INFO | ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-185450.pkl → F1=0.0000
+2025-05-26 18:54:50,126 |     INFO | ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-185450.pkl below gate 0.60 – discarded
+2025-05-26 18:54:50,126 |    ERROR | ARBUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:54:50,128 |     INFO | ⚙️  FILUSD – training models from FILUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:54:51,671 |     INFO | [FILUSD] class counts 0:38910 1:16505 → weights 0:0.7121 1:1.6787
+2025-05-26 18:56:01,261 |     INFO | [FILUSD] TEST‑set F1 = 0.3965 (gate 0.60)
+2025-05-26 18:56:03,578 |     INFO | Val threshold = 0.4450 (precision 0.414 recall 1.000)
+2025-05-26 18:56:03,711 |     INFO | It's saved!
+2025-05-26 18:56:03,711 |     INFO | FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250526-185603.pkl → F1=0.3965
+2025-05-26 18:56:03,712 |     INFO | FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250526-185603.pkl below gate 0.60 – discarded
+2025-05-26 18:56:03,712 |    ERROR | FILUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:56:03,714 |     INFO | ⚙️  GALAUSD – training models from GALAUSD_55d_1m_26_05_2025_failed.csv
+2025-05-26 18:56:05,191 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-05-26 18:56:05,191 |    ERROR | GALAUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-05-26 18:56:05,192 |     INFO | All DataManager threads stopped
+2025-05-26 18:56:05,192 |    ERROR | 15/25 coins failed – see log for details
+2025-05-26 18:56:05,192 |    ERROR | XETHZUSD: train_and_select returned no models
+2025-05-26 18:56:05,192 |    ERROR | XDGUSD: train_and_select returned no models
+2025-05-26 18:56:05,192 |    ERROR | XXRPZUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | ADAUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | POLUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | SHIBUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | PEPEUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | STXUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | OPUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | SEIUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | BONKUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | JUPUSD: train_and_select returned no models
+2025-05-26 18:56:05,193 |    ERROR | ARBUSD: train_and_select returned no models
+2025-05-26 18:56:05,194 |    ERROR | FILUSD: train_and_select returned no models
+2025-05-26 18:56:05,194 |    ERROR | GALAUSD: train_and_select returned no models
+2025-06-04 19:04:21,265 |     INFO | Loaded 23 coins from C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\config\coins.yaml
+2025-06-04 19:04:21,266 |     INFO | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['SOLUSD', 'XDGUSD', 'LINKUSD', 'XXRPZUSD', 'ADAUSD', 'AVAXUSD', 'XLTCZUSD', 'DOTUSD', 'POLUSD', 'BCHUSD', 'SHIBUSD', 'PEPEUSD', 'XXMRZUSD', 'STXUSD', 'OPUSD', 'SUIUSD', 'SEIUSD', 'BONKUSD', 'INJUSD', 'JUPUSD', 'ARBUSD', 'FILUSD', 'GALAUSD']
+2025-06-04 19:04:21,267 |     INFO | Ensuring datasets via /Trades … this may take a while on first run
+2025-06-04 19:05:07,436 |     INFO | ⚙️  SOLUSD – training models from SOLUSD_55d_1m_25_05_2025.csv
+2025-06-04 19:05:08,823 |     INFO | [SOLUSD] class counts 0:5703 1:49735 → weights 0:4.8604 1:0.5573
+2025-06-04 19:05:39,904 |     INFO | [SOLUSD] TEST‑set F1 = 0.9467 (gate 0.60)
+2025-06-04 19:05:41,512 |     INFO | Val threshold = 0.5073 (precision 0.902 recall 1.000)
+2025-06-04 19:05:41,611 |     INFO | It's saved!
+2025-06-04 19:05:41,612 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250604-190541.pkl → F1=0.9467
+2025-06-04 19:05:54,489 |     INFO | SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250604-190541.pkl  prAUC=0.904  pnl=-2.549253  1/1
+2025-06-04 19:05:54,490 |     INFO | 🏅 SOLUSD – champion: SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl
+2025-06-04 19:05:54,491 |     INFO | ⚙️  XDGUSD – training models from XDGUSD_55d_1m_14_05_2025.csv
+2025-06-04 19:05:55,894 |     INFO | [XDGUSD] class counts 0:66259 1:29 → weights 0:0.5002 1:1142.8966
+2025-06-04 19:06:23,159 |     INFO | [XDGUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-06-04 19:06:24,951 |     INFO | Val threshold = 0.0075 (precision 0.039 recall 0.353)
+2025-06-04 19:06:25,064 |     INFO | It's saved!
+2025-06-04 19:06:25,065 |     INFO | XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-190624.pkl → F1=0.0000
+2025-06-04 19:06:25,065 |     INFO | XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-190624.pkl below gate 0.60 – discarded
+2025-06-04 19:06:25,065 |    ERROR | XDGUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:06:25,066 |     INFO | ⚙️  LINKUSD – training models from LINKUSD_55d_1m_25_05_2025.csv
+2025-06-04 19:06:26,377 |     INFO | [LINKUSD] class counts 0:15535 1:39893 → weights 0:1.7840 1:0.6947
+2025-06-04 19:07:03,926 |     INFO | [LINKUSD] TEST‑set F1 = 0.8687 (gate 0.60)
+2025-06-04 19:07:05,614 |     INFO | Val threshold = 0.4850 (precision 0.808 recall 1.000)
+2025-06-04 19:07:05,718 |     INFO | It's saved!
+2025-06-04 19:07:05,719 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250604-190705.pkl → F1=0.8687
+2025-06-04 19:07:18,403 |     INFO | LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250604-190705.pkl  prAUC=0.766  pnl=+3.512234  1/1
+2025-06-04 19:07:18,404 |     INFO | 🏅 LINKUSD – champion: LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250525-171717.pkl
+2025-06-04 19:07:18,405 |     INFO | ⚙️  XXRPZUSD – training models from XXRPZUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:07:19,771 |     INFO | [XXRPZUSD] class counts 0:40613 1:14831 → weights 0:0.6826 1:1.8692
+2025-06-04 19:07:51,893 |     INFO | [XXRPZUSD] TEST‑set F1 = 0.3979 (gate 0.60)
+2025-06-04 19:07:53,333 |     INFO | Val threshold = 0.4646 (precision 0.421 recall 0.920)
+2025-06-04 19:07:53,437 |     INFO | It's saved!
+2025-06-04 19:07:53,437 |     INFO | XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-190753.pkl → F1=0.3979
+2025-06-04 19:07:53,437 |     INFO | XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-190753.pkl below gate 0.60 – discarded
+2025-06-04 19:07:53,437 |    ERROR | XXRPZUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:07:53,439 |     INFO | ⚙️  ADAUSD – training models from ADAUSD_25d_1m_26_05_2025.csv
+2025-06-04 19:07:54,091 |     INFO | [ADAUSD] class counts 0:23794 1:1394 → weights 0:0.5293 1:9.0344
+2025-06-04 19:08:05,333 |     INFO | [ADAUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-06-04 19:08:06,023 |     INFO | Val threshold = 0.1951 (precision 0.037 recall 0.972)
+2025-06-04 19:08:06,072 |     INFO | It's saved!
+2025-06-04 19:08:06,072 |     INFO | ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-190806.pkl → F1=0.0000
+2025-06-04 19:08:06,072 |     INFO | ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-190806.pkl below gate 0.60 – discarded
+2025-06-04 19:08:06,072 |    ERROR | ADAUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:08:06,073 |     INFO | ⚙️  AVAXUSD – training models from AVAXUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:08:07,436 |     INFO | [AVAXUSD] class counts 0:12168 1:43258 → weights 0:2.2775 1:0.6406
+2025-06-04 19:08:32,402 |     INFO | [AVAXUSD] TEST‑set F1 = 0.9040 (gate 0.60)
+2025-06-04 19:08:33,864 |     INFO | Val threshold = 0.5141 (precision 0.836 recall 1.000)
+2025-06-04 19:08:33,967 |     INFO | It's saved!
+2025-06-04 19:08:33,968 |     INFO | AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl → F1=0.9040
+2025-06-04 19:08:45,955 |     INFO | AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl  prAUC=0.844  pnl=+0.994449  1/1
+2025-06-04 19:08:45,956 |     INFO | 🏅 AVAXUSD – champion: AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl
+2025-06-04 19:08:45,957 |     INFO | ⚙️  XLTCZUSD – training models from XLTCZUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:08:47,272 |     INFO | [XLTCZUSD] class counts 0:7706 1:47725 → weights 0:3.5966 1:0.5807
+2025-06-04 19:09:10,913 |     INFO | [XLTCZUSD] TEST‑set F1 = 0.9288 (gate 0.60)
+2025-06-04 19:09:12,330 |     INFO | Val threshold = 0.5703 (precision 0.875 recall 1.000)
+2025-06-04 19:09:12,435 |     INFO | It's saved!
+2025-06-04 19:09:12,435 |     INFO | XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250604-190912.pkl → F1=0.9288
+2025-06-04 19:09:26,205 |     INFO | XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250604-190912.pkl  prAUC=0.859  pnl=-2.964108  1/1
+2025-06-04 19:09:26,207 |     INFO | 🏅 XLTCZUSD – champion: XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-183141.pkl
+2025-06-04 19:09:26,207 |     INFO | ⚙️  DOTUSD – training models from DOTUSD_25d_1m_26_05_2025.csv
+2025-06-04 19:09:26,865 |     INFO | [DOTUSD] class counts 0:11199 1:13987 → weights 0:1.1245 1:0.9003
+2025-06-04 19:09:39,260 |     INFO | [DOTUSD] TEST‑set F1 = 0.6460 (gate 0.60)
+2025-06-04 19:09:40,428 |     INFO | Val threshold = 0.5145 (precision 0.595 recall 1.000)
+2025-06-04 19:09:40,471 |     INFO | It's saved!
+2025-06-04 19:09:40,471 |     INFO | DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250604-190940.pkl → F1=0.6460
+2025-06-04 19:09:53,684 |     INFO | DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250604-190940.pkl  prAUC=0.483  pnl=+0.654587  1/1
+2025-06-04 19:09:53,685 |     INFO | 🏅 DOTUSD – champion: DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250526-183211.pkl
+2025-06-04 19:09:53,686 |     INFO | ⚙️  POLUSD – training models from POLUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:09:55,172 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-06-04 19:09:55,172 |    ERROR | POLUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:09:55,173 |     INFO | ⚙️  BCHUSD – training models from BCHUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:09:56,508 |     INFO | [BCHUSD] class counts 0:12208 1:43218 → weights 0:2.2701 1:0.6412
+2025-06-04 19:10:37,250 |     INFO | [BCHUSD] TEST‑set F1 = 0.8757 (gate 0.60)
+2025-06-04 19:10:39,258 |     INFO | Val threshold = 0.5579 (precision 0.789 recall 1.000)
+2025-06-04 19:10:39,380 |     INFO | It's saved!
+2025-06-04 19:10:39,381 |     INFO | BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250604-191039.pkl → F1=0.8757
+2025-06-04 19:10:51,465 |     INFO | BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250604-191039.pkl  prAUC=0.804  pnl=-3.397470  1/1
+2025-06-04 19:10:51,466 |     INFO | 🏅 BCHUSD – champion: BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl
+2025-06-04 19:10:51,466 |     INFO | ⚙️  SHIBUSD – training models from SHIBUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:10:52,845 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-06-04 19:10:52,845 |    ERROR | SHIBUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:10:52,846 |     INFO | ⚙️  PEPEUSD – training models from PEPEUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:10:54,143 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-06-04 19:10:54,144 |    ERROR | PEPEUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:10:54,145 |     INFO | ⚙️  XXMRZUSD – training models from XXMRZUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:10:55,514 |     INFO | [XXMRZUSD] class counts 0:6718 1:48715 → weights 0:4.1257 1:0.5690
+2025-06-04 19:11:19,259 |     INFO | [XXMRZUSD] TEST‑set F1 = 0.8817 (gate 0.60)
+2025-06-04 19:11:20,826 |     INFO | Val threshold = 0.5209 (precision 0.899 recall 1.000)
+2025-06-04 19:11:20,925 |     INFO | It's saved!
+2025-06-04 19:11:20,926 |     INFO | XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250604-191120.pkl → F1=0.8817
+2025-06-04 19:11:33,980 |     INFO | XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250604-191120.pkl  prAUC=0.905  pnl=-4.002424  1/1
+2025-06-04 19:11:33,981 |     INFO | 🏅 XXMRZUSD – champion: XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-183404.pkl
+2025-06-04 19:11:33,981 |     INFO | ⚙️  STXUSD – training models from STXUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:11:35,239 |     INFO | [STXUSD] class counts 0:50830 1:4575 → weights 0:0.5450 1:6.0552
+2025-06-04 19:11:57,902 |     INFO | [STXUSD] TEST‑set F1 = 0.1749 (gate 0.60)
+2025-06-04 19:11:59,569 |     INFO | Val threshold = 0.5511 (precision 0.117 recall 0.897)
+2025-06-04 19:11:59,672 |     INFO | It's saved!
+2025-06-04 19:11:59,673 |     INFO | STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250604-191159.pkl → F1=0.1749
+2025-06-04 19:11:59,673 |     INFO | STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250604-191159.pkl below gate 0.60 – discarded
+2025-06-04 19:11:59,674 |    ERROR | STXUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:11:59,675 |     INFO | ⚙️  OPUSD – training models from OPUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:12:01,057 |     INFO | [OPUSD] class counts 0:52798 1:2606 → weights 0:0.5247 1:10.6301
+2025-06-04 19:12:32,671 |     INFO | [OPUSD] TEST‑set F1 = 0.1754 (gate 0.60)
+2025-06-04 19:12:34,220 |     INFO | Val threshold = 0.5013 (precision 0.162 recall 1.000)
+2025-06-04 19:12:34,330 |     INFO | It's saved!
+2025-06-04 19:12:34,330 |     INFO | OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250604-191234.pkl → F1=0.1754
+2025-06-04 19:12:34,331 |     INFO | OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250604-191234.pkl below gate 0.60 – discarded
+2025-06-04 19:12:34,331 |    ERROR | OPUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:12:34,332 |     INFO | ⚙️  SUIUSD – training models from SUIUSD_55d_1m_26_05_2025.csv
+2025-06-04 19:12:35,714 |     INFO | [SUIUSD] class counts 0:26662 1:28773 → weights 0:1.0396 1:0.9633
+2025-06-04 19:13:00,071 |     INFO | [SUIUSD] TEST‑set F1 = 0.7346 (gate 0.60)
+2025-06-04 19:13:01,618 |     INFO | Val threshold = 0.5794 (precision 0.635 recall 1.000)
+2025-06-04 19:13:01,724 |     INFO | It's saved!
+2025-06-04 19:13:01,725 |     INFO | SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250604-191301.pkl → F1=0.7346
+2025-06-04 19:13:14,179 |     INFO | SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250604-191301.pkl  prAUC=0.643  pnl=-9.475443  1/1
+2025-06-04 19:13:14,180 |     INFO | 🏅 SUIUSD – champion: SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl
+2025-06-04 19:13:14,181 |     INFO | ⚙️  SEIUSD – training models from SEIUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:13:15,557 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: test split is missing a class
+2025-06-04 19:13:15,557 |    ERROR | SEIUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:13:15,559 |     INFO | ⚙️  BONKUSD – training models from BONKUSD_55d_1m_04_06_2025_failed.csv
+2025-06-04 19:13:16,852 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-06-04 19:13:16,853 |    ERROR | BONKUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:13:16,854 |     INFO | ⚙️  INJUSD – training models from INJUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:13:18,196 |     INFO | [INJUSD] class counts 0:21824 1:33600 → weights 0:1.2698 1:0.8248
+2025-06-04 19:13:42,820 |     INFO | [INJUSD] TEST‑set F1 = 0.8247 (gate 0.60)
+2025-06-04 19:13:44,353 |     INFO | Val threshold = 0.6255 (precision 0.713 recall 1.000)
+2025-06-04 19:13:44,460 |     INFO | It's saved!
+2025-06-04 19:13:44,460 |     INFO | INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-191344.pkl → F1=0.8247
+2025-06-04 19:13:57,020 |     INFO | INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-191344.pkl  prAUC=0.693  pnl=+515.506806  1/1
+2025-06-04 19:13:57,021 |     INFO | 🏅 INJUSD – champion: INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl
+2025-06-04 19:13:57,022 |     INFO | ⚙️  JUPUSD – training models from JUPUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:13:58,421 |     INFO | [JUPUSD] class counts 0:54618 1:807 → weights 0:0.5074 1:34.3401
+2025-06-04 19:14:23,111 |     INFO | [JUPUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-06-04 19:14:24,644 |     INFO | Val threshold = 0.3028 (precision 0.057 recall 0.948)
+2025-06-04 19:14:24,750 |     INFO | It's saved!
+2025-06-04 19:14:24,751 |     INFO | JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191424.pkl → F1=0.0000
+2025-06-04 19:14:24,751 |     INFO | JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191424.pkl below gate 0.60 – discarded
+2025-06-04 19:14:24,751 |    ERROR | JUPUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:14:24,752 |     INFO | ⚙️  ARBUSD – training models from ARBUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:14:26,146 |     INFO | [ARBUSD] class counts 0:55209 1:205 → weights 0:0.5019 1:135.1561
+2025-06-04 19:14:50,413 |     INFO | [ARBUSD] TEST‑set F1 = 0.0000 (gate 0.60)
+2025-06-04 19:14:51,963 |     INFO | Val threshold = 0.0501 (precision 0.130 recall 0.293)
+2025-06-04 19:14:52,069 |     INFO | It's saved!
+2025-06-04 19:14:52,069 |     INFO | ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191451.pkl → F1=0.0000
+2025-06-04 19:14:52,070 |     INFO | ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191451.pkl below gate 0.60 – discarded
+2025-06-04 19:14:52,070 |    ERROR | ARBUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:14:52,070 |     INFO | ⚙️  FILUSD – training models from FILUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:14:53,464 |     INFO | [FILUSD] class counts 0:38910 1:16505 → weights 0:0.7121 1:1.6787
+2025-06-04 19:15:55,892 |     INFO | [FILUSD] TEST‑set F1 = 0.3965 (gate 0.60)
+2025-06-04 19:15:57,332 |     INFO | Val threshold = 0.4450 (precision 0.414 recall 1.000)
+2025-06-04 19:15:57,467 |     INFO | It's saved!
+2025-06-04 19:15:57,468 |     INFO | FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250604-191557.pkl → F1=0.3965
+2025-06-04 19:15:57,468 |     INFO | FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250604-191557.pkl below gate 0.60 – discarded
+2025-06-04 19:15:57,468 |    ERROR | FILUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:15:57,469 |     INFO | ⚙️  GALAUSD – training models from GALAUSD_55d_1m_26_05_2025_failed.csv
+2025-06-04 19:15:58,869 |     INFO | Variant (32, 0.1, 0.008, 20) skipped: val split is missing a class
+2025-06-04 19:15:58,870 |    ERROR | GALAUSD – training failed: train_and_select returned no models
+Traceback (most recent call last):
+  File "c:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\modelsaving_test.py", line 142, in main
+    raise RuntimeError("train_and_select returned no models")
+RuntimeError: train_and_select returned no models
+2025-06-04 19:15:58,871 |     INFO | All DataManager threads stopped
+2025-06-04 19:15:58,871 |    ERROR | 14/23 coins failed – see log for details
+2025-06-04 19:15:58,871 |    ERROR | XDGUSD: train_and_select returned no models
+2025-06-04 19:15:58,871 |    ERROR | XXRPZUSD: train_and_select returned no models
+2025-06-04 19:15:58,871 |    ERROR | ADAUSD: train_and_select returned no models
+2025-06-04 19:15:58,871 |    ERROR | POLUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | SHIBUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | PEPEUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | STXUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | OPUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | SEIUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | BONKUSD: train_and_select returned no models
+2025-06-04 19:15:58,872 |    ERROR | JUPUSD: train_and_select returned no models
+2025-06-04 19:15:58,873 |    ERROR | ARBUSD: train_and_select returned no models
+2025-06-04 19:15:58,873 |    ERROR | FILUSD: train_and_select returned no models
+2025-06-04 19:15:58,873 |    ERROR | GALAUSD: train_and_select returned no models

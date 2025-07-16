@@ -1,0 +1,125 @@
+Third Run
+
+5d models: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 8664/8664 [8:25:36<00:00,  3.50s/model]
+
+=== Top performers — 5-day window ===
+                                                              model coin    ret
+ ATOMUSD_b1_h30_thr0.012_hid32_dp0.2_f1_0.45059_20250614-194148.pkl  ATO +43.3%
+ATOMUSD_b1_h20_thr0.012_hid128_dp0.1_f1_0.38331_20250614-212133.pkl  ATO +41.1%
+ ATOMUSD_b1_h30_thr0.015_hid32_dp0.4_f1_0.43030_20250614-200759.pkl  ATO +26.6%
+ ATOMUSD_b1_h30_thr0.012_hid64_dp0.2_f1_0.50389_20250614-204508.pkl  ATO +24.7%
+ATOMUSD_b1_h30_thr0.012_hid128_dp0.2_f1_0.49663_20250614-214703.pkl  ATO +24.4%
+AAVEUSD_b1_h20_thr0.015_hid128_dp0.2_f1_0.31982_20250614-184439.pkl  AAV +24.2%
+AAVEUSD_b1_h20_thr0.015_hid128_dp0.4_f1_0.27141_20250614-190253.pkl  AAV +22.4%
+ATOMUSD_b1_h30_thr0.012_hid128_dp0.1_f1_0.36430_20250614-212431.pkl  ATO +16.8%
+AAVEUSD_b1_h20_thr0.008_hid128_dp0.2_f1_0.13703_20250614-183228.pkl  AAV +15.0%
+ UNIUSD_b1_h30_thr0.008_hid128_dp0.1_f1_0.46990_20250614-152357.pkl  UNI +14.8%
+08:00:47 |     INFO | profit_test | Detailed results for 5d window → backtest_detail_5d_20250615_120047.csv
+08:00:47 |     INFO | profit_test | Starting backtests for 30d window…
+
+.... Extra running file context: 2025-06-17 01:58:09,038 |     INFO | [ATOMUSD] TEST-set F1 = 0.3125 (gate 0.60)
+2025-06-17 01:58:09,056 |     INFO | Val threshold = 0.4694 (precision 0.486 recall 1.000)
+2025-06-17 01:58:09,086 |     INFO | Model + scaler exported
+2025-06-17 01:58:29,275 |     INFO | [ATOMUSD] class counts 0:320 1:352 → weights 0:1.0500 1:0.9545
+epoch     train_loss  valid_loss  accuracy  f1_score  roc_auc_score  pr_auc    precision_score  recall_score  time
+2025-06-17 01:58:29,294 |  WARNING | [ATOMUSD] combo (32, 0.4, 0.008, 1, 2.0) failed: tuple index out of range
+2025-06-17 01:58:29,381 |     INFO | [ATOMUSD] class counts 0:320 1:352 → weights 0:1.0500 1:0.9545
+epoch     train_loss  valid_loss  accuracy  f1_score  roc_auc_score  pr_auc    precision_score  recall_score  time
+2025-06-17 01:58:29,400 |  WARNING | [ATOMUSD] combo (32, 0.4, 0.008, 1, 4.0) failed: tuple index out of range
+2025-06-17 01:58:29,499 |     INFO | [ATOMUSD] class counts 0:396 1:276 → weights 0:0.8485 1:1.2174
+epoch     train_loss  valid_loss  accuracy  f1_score  roc_auc_score  pr_auc    precision_score  recall_score  time
+0         0.237033    0.234190    0.583333  0.000000  0.395437       0.374917  0.000000         0.000000      00:00
+Better model found at epoch 0 with f1_score value: 0.0.
+1         0.217588    0.193833    0.444444  0.420290  0.395238       0.363283  0.371795         0.483333      00:00
+Better model found at epoch 1 with f1_score value: 0.42028985507246375.
+2         0.201388    0.184883    0.416667  0.588235  0.399405       0.366017  0.416667         1.000000      00:00
+Better model found at epoch 2 with f1_score value: 0.5882352941176471.
+3         0.193555    0.182560    0.416667  0.588235  0.404960       0.367437  0.416667         1.000000      00:00
+4         0.188876    0.181370    0.409722  0.581281  0.408730       0.378382  0.412587         0.983333      00:00
+No improvement since epoch 2: early stopping
+2025-06-17 01:58:31,701 |     INFO | [ATOMUSD] TEST-set F1 = 0.5231 (gate 0.60)
+2025-06-17 01:58:31,721 |     INFO | Val threshold = 0.5071 (precision 0.417 recall 1.000)
+2025-06-17 01:58:31,749 |     INFO | Model + scaler exported
+
+...... Return to file context,,,
+
+
+
+=== Top performers — 30-day window ===
+                                                              model coin     ret
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.1_f1_0.69215_20250614-151826.pkl  UNI +490.2%
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.4_f1_0.75700_20250614-161136.pkl  UNI +349.8%
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.4_f1_0.67533_20250614-160806.pkl  UNI +238.9%
+ ATOMUSD_b1_h30_thr0.008_hid64_dp0.1_f1_0.02222_20250614-201717.pkl  ATO  +97.0%
+ ATOMUSD_b1_h20_thr0.008_hid64_dp0.2_f1_0.07825_20250614-203352.pkl  ATO  +80.0%
+ ATOMUSD_b1_h30_thr0.008_hid32_dp0.4_f1_0.01272_20250614-195546.pkl  ATO  +57.3%
+ATOMUSD_b1_h30_thr0.008_hid128_dp0.2_f1_0.05245_20250614-213718.pkl  ATO  +55.8%
+ ATOMUSD_b1_h30_thr0.008_hid32_dp0.2_f1_0.01456_20250614-193425.pkl  ATO  +52.3%
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.1_f1_0.71828_20250614-152225.pkl  UNI  +36.1%
+ ATOMUSD_b1_h30_thr0.008_hid64_dp0.4_f1_0.04372_20250614-205455.pkl  ATO  +32.5%
+03:22:52 |     INFO | profit_test | Detailed results for 30d window → backtest_detail_30d_20250617_072252.csv
+03:22:52 |     INFO | profit_test | Starting backtests for 90d window…
+90d models: 100%|████████████████████████████████████████████████████████████████████| 8664/8664 [6:32:00<00:00,  2.71s/model]
+
+=== Top performers — 90-day window ===
+                                                             model coin    ret
+ XTZUSD_b1_h30_thr0.012_hid32_dp0.2_f1_0.00000_20250614-223150.pkl  TZU +26.2%
+ XTZUSD_b1_h30_thr0.012_hid64_dp0.4_f1_0.00010_20250614-230725.pkl  TZU +19.2%
+ XTZUSD_b1_h30_thr0.012_hid64_dp0.4_f1_0.00000_20250614-230512.pkl  TZU +18.5%
+ UNIUSD_b1_h30_thr0.015_hid32_dp0.1_f1_0.74971_20250614-132217.pkl  UNI +17.5%
+ UNIUSD_b1_h30_thr0.015_hid64_dp0.4_f1_0.74971_20250614-151556.pkl  UNI +17.4%
+UNIUSD_b1_h20_thr0.015_hid128_dp0.4_f1_0.68178_20250614-162516.pkl  UNI +16.6%
+    INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-191344.pkl  INJ +16.5%
+    INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-174434.pkl  INJ +16.5%
+    INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-185332.pkl  INJ +16.5%
+    INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl  INJ +16.5%
+09:54:53 |     INFO | profit_test | Detailed results for 90d window → backtest_detail_90d_20250617_135453.csv
+
+=== Cross-window summary ===
+                                                              model coin ret_mean  dd_worst
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.1_f1_0.69215_20250614-151826.pkl  UNI  +160.3% -0.207730
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.4_f1_0.75700_20250614-161136.pkl  UNI  +112.4% -0.246146
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.4_f1_0.67533_20250614-160806.pkl  UNI   +76.8% -0.199303
+ ATOMUSD_b1_h30_thr0.008_hid64_dp0.1_f1_0.02222_20250614-201717.pkl  ATO   +29.7% -0.056607
+ ATOMUSD_b1_h20_thr0.008_hid64_dp0.2_f1_0.07825_20250614-203352.pkl  ATO   +20.3% -0.173096
+ ATOMUSD_b1_h30_thr0.008_hid32_dp0.4_f1_0.01272_20250614-195546.pkl  ATO   +18.1% -0.030199
+ ATOMUSD_b1_h30_thr0.008_hid32_dp0.2_f1_0.01456_20250614-193425.pkl  ATO   +15.8% -0.064664
+ATOMUSD_b1_h30_thr0.008_hid128_dp0.2_f1_0.05245_20250614-213718.pkl  ATO   +13.8% -0.134741
+  UNIUSD_b1_h30_thr0.008_hid32_dp0.4_f1_0.40793_20250614-135158.pkl  UNI   +11.8%  0.108169
+AAVEUSD_b1_h20_thr0.008_hid128_dp0.2_f1_0.13703_20250614-183228.pkl  AAV   +11.8%  0.005854
+ UNIUSD_b1_h30_thr0.008_hid128_dp0.1_f1_0.46990_20250614-152357.pkl  UNI   +11.8%  0.102216
+AAVEUSD_b1_h20_thr0.015_hid128_dp0.2_f1_0.31982_20250614-184439.pkl  AAV   +11.7%  0.005912
+     INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-183650.pkl  INJ   +10.7% -0.009233
+     INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-185332.pkl  INJ   +10.7% -0.009233
+     INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-174434.pkl  INJ   +10.7% -0.009233
+     INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-191344.pkl  INJ   +10.7% -0.009233
+ UNIUSD_b1_h30_thr0.008_hid128_dp0.1_f1_0.62320_20250614-152609.pkl  UNI   +10.3%  0.058866
+  UNIUSD_b1_h30_thr0.008_hid32_dp0.1_f1_0.40759_20250614-130509.pkl  UNI    +9.3%  0.042666
+ AAVEUSD_b1_h20_thr0.012_hid64_dp0.4_f1_0.23991_20250614-180240.pkl  AAV    +9.2%  0.003426
+ UNIUSD_b1_h20_thr0.008_hid128_dp0.1_f1_0.71828_20250614-152225.pkl  UNI    +9.2% -0.237163
+09:54:53 |     INFO | profit_test | Summary CSV → backtest_summary_20250617_135453.csv
+
+=== SHOW ME THE MONEY ===
+coin                                                               model pnl_15d sharpe drawdown
+ AAV AAVEUSD_b1_h20_thr0.015_hid128_dp0.2_f1_0.31982_20250614-184439.pkl  +24.2%   0.12    +0.6%
+ ADA      ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-190806.pkl   +0.5%   0.00    +0.1%
+ ARB      ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-174811.pkl   +1.6%   0.01    +0.5%
+ ATO  ATOMUSD_b1_h30_thr0.008_hid64_dp0.1_f1_0.02222_20250614-201717.pkl  +97.0%   0.30    -5.7%
+ AVA     AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl   -0.0%  -0.00    -0.1%
+ BCH      BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl   +3.1%   0.03    +1.5%
+ BTC    XXBTZUSD_h20_thr0.008_hid32_dp0.1_f1_0.95953_20250525-171304.pkl   +4.0%   0.04    +4.0%
+ ETH    XETHZUSD_h20_thr0.008_hid32_dp0.1_f1_0.00362_20250523-234607.pkl   +3.9%   0.04    +3.9%
+ FIL      FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250604-191557.pkl   +0.6%  -0.19   -28.9%
+ INJ      INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250526-185332.pkl  +16.5%   0.11    -0.9%
+ LIN     LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250526-182917.pkl   +0.0%  -0.02    -2.9%
+ LTC    XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250604-190912.pkl   +0.4%   0.00    -0.1%
+ OPU       OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250526-183530.pkl   +0.5%   0.00    +0.3%
+ POL   POLUSD_b1_h30_thr0.008_hid64_dp0.1_f1_0.06374_20250613-130634.pkl   +1.4%   0.01    -0.7%
+ RPU  XRPUSD_b1_h20_thr0.012_hid128_dp0.2_f1_0.23606_20250614-123628.pkl   +1.4%   0.01    +1.4%
+ SEI  SEIUSD_b1_h20_thr0.008_hid128_dp0.1_f1_0.00337_20250613-134606.pkl   +0.6%  -0.01    -5.1%
+ SOL      SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250604-190541.pkl   -0.9%  -0.01    -0.9%
+ SUI      SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250604-191301.pkl   -0.0%  -0.01    -2.2%
+ TZU   XTZUSD_b1_h30_thr0.012_hid32_dp0.2_f1_0.00000_20250614-223150.pkl  +26.2%  -0.29  -140.2%
+ UNI  UNIUSD_b1_h20_thr0.008_hid128_dp0.1_f1_0.69215_20250614-151826.pkl +490.2%   1.60   -20.8%
+09:54:53 |     INFO | profit_test | Coin performance log updated → coin_perf.json
+PS C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2> python profit_test.py --windows 5 30 90python profit_test.py --windows 5 30 90

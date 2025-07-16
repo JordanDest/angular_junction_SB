@@ -1,0 +1,10 @@
+18:58:24 |     INFO | utils.data_manager | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+19:01:52 |     INFO | utils.data_manager | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+20:21:43 |  WARNING | backtest25d | No models for DOGE
+20:27:45 |     INFO | utils.data_manager | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+20:27:45 |     INFO | backtest25d | Backfilling 25-day data for 5 coins.
+20:29:23 |     INFO | utils.data_manager | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+20:29:23 |     INFO | backtest25d | Backfilling 25-day data for 5 coins.
+21:45:00 |  WARNING | backtest25d | No models for DOGE
+22:00:43 |     INFO | utils.data_manager | DataManager initialised – directory=C:\Users\jordd\OneDrive\Desktop\Code\StockBot\StockFactory2\data symbols=['XXBTZUSD', 'XETHZUSD', 'SOLUSD', 'DOGEUSD', 'LINKUSD']
+22:00:43 |     INFO | backtest25d | Backfilling 25-day data for 5 coins.

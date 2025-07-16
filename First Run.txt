@@ -1,0 +1,123 @@
+First Run
+=== Top performers — 15-day window ===
+                                                           model coin return drawdown sharpe
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  AVA +38.0%   -20.0%   0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl  AVA +38.0%   -20.0%   0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-185119.pkl  AVA +38.0%   -20.0%   0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-184735.pkl  AVA +38.0%   -20.0%   0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-172826.pkl  AVA +38.0%   -20.0%   0.64
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-190753.pkl  RPZ  +3.2%   -10.5%   0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-185039.pkl  RPZ  +3.2%   -10.5%   0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-172410.pkl  RPZ  +3.2%   -10.5%   0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-184650.pkl  RPZ  +3.2%   -10.5%   0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-183010.pkl  RPZ  +3.2%   -10.5%   0.08
+14:17:10 |     INFO | profit_test | Detailed results for 15d window → backtest_detail_15d_20250605_181710.csv
+Windows: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [1:29:13<00:00, 2676.57s/it] 
+
+=== Cross-window summary (avg return) ===
+                                                           model coin ret_mean dd_worst shr_mean
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-184735.pkl  AVA   +38.0%   -20.0%     0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  AVA   +38.0%   -20.0%     0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl  AVA   +38.0%   -20.0%     0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-185119.pkl  AVA   +38.0%   -20.0%     0.64
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-172826.pkl  AVA   +38.0%   -20.0%     0.64
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-190753.pkl  RPZ    +3.2%   -10.5%     0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-183010.pkl  RPZ    +3.2%   -10.5%     0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-184650.pkl  RPZ    +3.2%   -10.5%     0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-172410.pkl  RPZ    +3.2%   -10.5%     0.08
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-185039.pkl  RPZ    +3.2%   -10.5%     0.08
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-190624.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184505.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-182830.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250524-170840.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250524-170258.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250524-165538.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250523-235547.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250523-235108.pkl DOGE    +0.9%    +0.0%     0.55
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250523-234637.pkl DOGE    +0.9%    +0.0%     0.55
+  ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184704.pkl  ADA    +0.5%    -0.3%     0.22
+14:17:10 |     INFO | profit_test | Summary CSV → backtest_summary_20250605_181710.csv
+
+=== SHOW ME THE MONEY – best model per coin (15d PnL priority) ===
+coin                                                            model pnl_15d sharpe drawdown
+ AVA  AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  +38.0%   0.64   -20.0%
+ RPZ XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-172410.pkl   +3.2%   0.08   -10.5%
+DOGE   XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250524-170258.pkl   +0.9%   0.55    +0.0%
+ ADA   ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183024.pkl   +0.5%   0.22    -0.3%
+ SOL   SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl   +0.3%   0.04    -6.4%
+ JUP   JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191424.pkl   -0.0%  -0.44    -0.0%
+ ARB   ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183806.pkl   -0.0%  -0.44    -0.0%
+ LTC XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250604-185200.pkl   -4.2%  -0.03   -20.1%
+ MRZ XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250604-191120.pkl   -5.6%  -0.24   -11.0%
+ OPU    OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250526-183530.pkl  -15.2%   0.22   -85.0%
+ SUI   SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl  -25.8%  -0.43   -34.7%
+ LIN  LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250604-190705.pkl  -30.2%  -0.36   -49.3%
+ DOT   DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250604-190940.pkl  -43.5%  -0.34   -61.6%
+ BCH   BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-184955.pkl  -54.6%   0.05   -84.4%
+ FIL   FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250604-175033.pkl  -79.9%  -0.95   -82.4%
+ STX   STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250526-183452.pkl  -97.0%  -0.93   -97.0%
+ INJ   INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-191344.pkl -254.1%  -0.18  -146.4%
+
+
+
+Second Run
+
+=== Top performers — 15-day window ===
+                                                           model coin return drawdown sharpe
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-172826.pkl  AVA +38.6%   -20.0%   0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl  AVA +38.6%   -20.0%   0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-185119.pkl  AVA +38.6%   -20.0%   0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-184735.pkl  AVA +38.6%   -20.0%   0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  AVA +38.6%   -20.0%   0.65
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-183010.pkl  RPZ  +6.1%   -10.5%   0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-190753.pkl  RPZ  +6.1%   -10.5%   0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-185039.pkl  RPZ  +6.1%   -10.5%   0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-172410.pkl  RPZ  +6.1%   -10.5%   0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-184650.pkl  RPZ  +6.1%   -10.5%   0.14
+16:35:01 |     INFO | profit_test | Detailed results for 15d window → backtest_detail_15d_20250605_203501.csv
+Windows: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [1:27:52<00:00, 2636.06s/it] 
+
+=== Cross-window summary (avg return) ===
+                                                           model coin ret_mean dd_worst shr_mean
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-185119.pkl  AVA   +38.6%   -20.0%     0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-190833.pkl  AVA   +38.6%   -20.0%     0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  AVA   +38.6%   -20.0%     0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-184735.pkl  AVA   +38.6%   -20.0%     0.65
+ AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250604-172826.pkl  AVA   +38.6%   -20.0%     0.65
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-190753.pkl  RPZ    +6.1%   -10.5%     0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-185039.pkl  RPZ    +6.1%   -10.5%     0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-172410.pkl  RPZ    +6.1%   -10.5%     0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-184650.pkl  RPZ    +6.1%   -10.5%     0.14
+XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250526-183010.pkl  RPZ    +6.1%   -10.5%     0.14
+  SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250526-184412.pkl  SOL    +0.9%    -6.4%     0.09
+  SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250526-182739.pkl  SOL    +0.9%    -6.4%     0.09
+  SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl  SOL    +0.9%    -6.4%     0.09
+  SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250604-190541.pkl  SOL    +0.9%    -6.4%     0.09
+  SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250604-171857.pkl  SOL    +0.9%    -6.4%     0.09
+  JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191424.pkl  JUP    +0.9%    -0.1%     0.41
+  JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-174630.pkl  JUP    +0.9%    -0.1%     0.41
+  JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-185418.pkl  JUP    +0.9%    -0.1%     0.41
+  JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-183737.pkl  JUP    +0.9%    -0.1%     0.41
+  XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250523-235108.pkl DOGE    +0.9%    +0.0%     0.56
+16:35:01 |     INFO | profit_test | Summary CSV → backtest_summary_20250605_203501.csv
+
+=== SHOW ME THE MONEY – best model per coin (15d PnL priority) ===
+coin                                                            model pnl_15d sharpe drawdown
+ AVA  AVAXUSD_h20_thr0.008_hid32_dp0.1_f1_0.90397_20250526-183055.pkl  +38.6%   0.65   -20.0%
+ RPZ XXRPZUSD_h20_thr0.008_hid32_dp0.1_f1_0.39790_20250604-172410.pkl   +6.1%   0.14   -10.5%
+ SOL   SOLUSD_h20_thr0.008_hid32_dp0.1_f1_0.94672_20250525-171605.pkl   +0.9%   0.09    -6.4%
+ JUP   JUPUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-191424.pkl   +0.9%   0.41    -0.1%
+DOGE   XDGUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250523-234637.pkl   +0.9%   0.56    +0.0%
+ ADA   ADAUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250526-184704.pkl   +0.1%   0.34    +0.0%
+ ARB   ARBUSD_h20_thr0.008_hid32_dp0.1_f1_0.00000_20250604-174811.pkl   -0.1%  -0.44    -0.1%
+ MRZ XXMRZUSD_h20_thr0.008_hid32_dp0.1_f1_0.88171_20250526-185046.pkl   -6.9%  -0.31   -11.0%
+ LTC XLTCZUSD_h20_thr0.008_hid32_dp0.1_f1_0.92877_20250526-183141.pkl   -9.8%  -0.13   -20.1%
+ OPU    OPUSD_h20_thr0.008_hid32_dp0.1_f1_0.17544_20250604-191234.pkl  -15.3%   0.23   -85.0%
+ BCH   BCHUSD_h20_thr0.008_hid32_dp0.1_f1_0.87572_20250526-183315.pkl  -22.1%   0.22   -84.4%
+ SUI   SUIUSD_h20_thr0.008_hid32_dp0.1_f1_0.73457_20250526-183601.pkl  -27.2%  -0.47   -34.7%
+ LIN  LINKUSD_h20_thr0.008_hid32_dp0.1_f1_0.86867_20250604-172147.pkl  -29.8%  -0.36   -49.3%
+ DOT   DOTUSD_h20_thr0.008_hid32_dp0.1_f1_0.64599_20250604-190940.pkl  -43.5%  -0.34   -61.6%
+ FIL   FILUSD_h20_thr0.008_hid32_dp0.1_f1_0.39648_20250604-191557.pkl  -95.7%  -0.91   -96.5%
+ STX   STXUSD_h20_thr0.008_hid32_dp0.1_f1_0.17488_20250526-183452.pkl  -96.2%  -0.88   -96.6%
+ INJ   INJUSD_h20_thr0.008_hid32_dp0.1_f1_0.82472_20250604-191344.pkl -286.4%  -0.14  -146.4%
+16:35:01 |     INFO | profit_test | Coin performance log updated → coin_perf.json
