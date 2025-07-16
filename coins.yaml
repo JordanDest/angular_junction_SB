@@ -1,0 +1,631 @@
+# # coins:
+# #   #1 ─ Bitcoin – deepest book, slower moves
+# #   - symbol: XXBTZUSD
+# #     kraken_pair: XBTUSD        # Bitcoin / USD
+# #     interval_minutes: 1
+# #     horizon: 120
+# #     label_threshold: 50
+# #     slippage_bps: 3
+# #     fee_bps: 26
+# #     bull_bias_bps: 15
+# #     kelly_fraction: 0.25
+# #     api_key:    ${KRAKEN_API_KEY}
+# #     api_secret: ${KRAKEN_API_SECRET}
+
+# #   # 2 ─ Ethereum – second‑largest by depth
+# #   - symbol: XETHZUSD
+# #     kraken_pair: ETHUSD        # Ethereum / USD
+# #     interval_minutes: 1
+# #     horizon: 90
+# #     label_threshold: 10
+# #     slippage_bps: 4
+# #     fee_bps: 26
+# #     bull_bias_bps: 10
+# #     kelly_fraction: 0.25
+
+# #   # 3 ─ Solana – popular L1 with brisk flow
+# #   - symbol: SOLUSD
+# #     kraken_pair: SOLUSD        # Solana / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 1.0
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.20
+
+# #   # 4 ─ Dogecoin – meme coin, impulse‑driven
+# #   - symbol: XDGUSD
+# #     kraken_pair: XDGUSD        # Dogecoin / USD
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.002
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 20
+# #     kelly_fraction: 0.15
+
+# #   # 5 ─ Chainlink – mid‑cap oracle token
+# #   - symbol: LINKUSD
+# #     kraken_pair: LINKUSD       # Chainlink / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.25
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.20
+
+# #   # 6 ─ XRP – payments token, tight spreads
+# #   - symbol: XXRPZUSD
+# #     kraken_pair: XRPUSD        # XRP / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.01
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 10
+# #     kelly_fraction: 0.20
+
+# #   # 7 ─ Cardano – retail favorite
+# #   - symbol: ADAUSD
+# #     kraken_pair: ADAUSD        # Cardano / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.008
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #   # 8 ─ Avalanche – volatile L1
+# #   - symbol: AVAXUSD
+# #     kraken_pair: AVAXUSD       # Avalanche / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.8
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.20
+
+# #   # 9 ─ Litecoin – legacy PoW asset
+# #   - symbol: XLTCZUSD
+# #     kraken_pair: LTCUSD        # Litecoin / USD
+# #     interval_minutes: 1
+# #     horizon: 90
+# #     label_threshold: 1.5
+# #     slippage_bps: 4
+# #     fee_bps: 26
+# #     bull_bias_bps: 8
+# #     kelly_fraction: 0.20
+
+# #   # 10 ─ Polkadot – cross‑chain play
+# #   - symbol: DOTUSD
+# #     kraken_pair: DOTUSD        # Polkadot / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.14
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #  # 11 ─ Polygon Ecosystem Token (MATIC → POL)
+# #   - symbol: POLUSD            # internal pair code used by /Trades, /Ticker, etc.
+# #     kraken_pair: POLUSD       # altname you pass to /private/AddOrder
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.015
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #   # 12 ─ Bitcoin Cash – large‑cap fork
+# #   - symbol: BCHUSD
+# #     kraken_pair: BCHUSD        # Bitcoin Cash / USD
+# #     interval_minutes: 1
+# #     horizon: 90
+# #     label_threshold: 8
+# #     slippage_bps: 4
+# #     fee_bps: 26
+# #     bull_bias_bps: 8
+# #     kelly_fraction: 0.20
+
+# #   # 13 ─ Shiba Inu – micro‑price meme
+# #   - symbol: SHIBUSD
+# #     kraken_pair: SHIBUSD       # Shiba Inu / USD
+# #     live: false
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.0000015
+# #     slippage_bps: 7
+# #     fee_bps: 26
+# #     bull_bias_bps: 22
+# #     kelly_fraction: 0.12
+
+# #   # 14 ─ Pepe – high‑beta meme
+# #   - symbol: PEPEUSD
+# #     kraken_pair: PEPEUSD       # Pepe / USD
+# #     live: false
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.0000005
+# #     slippage_bps: 7
+# #     fee_bps: 26
+# #     bull_bias_bps: 25
+# #     kelly_fraction: 0.12
+
+# #   # 15 ─ Monero – privacy coin
+# #   - symbol: XXMRZUSD
+# #     kraken_pair: XMRUSD        # Monero / USD
+# #     interval_minutes: 1
+# #     horizon: 90
+# #     label_threshold: 3.2
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 6
+# #     kelly_fraction: 0.20
+
+# #   # 16 ─ Stacks – Bitcoin L2 narrative
+# #   - symbol: STXUSD
+# #     kraken_pair: STXUSD        # Stacks / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.05
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #   # 17 ─ Optimism – leading rollup token
+# #   - symbol: OPUSD
+# #     kraken_pair: OPUSD         # Optimism / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.06
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #   # 18 ─ Sui – newer L1
+# #   - symbol: SUIUSD
+# #     kraken_pair: SUIUSD        # Sui / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.03
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #   # 19 ─ Sei – fast‑finality L1
+# #   - symbol: SEIUSD
+# #     kraken_pair: SEIUSD        # Sei / USD
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.015
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 15
+# #     kelly_fraction: 0.18
+
+# #   # 20 ─ Bonk – Solana meme rocket
+# #   - symbol: BONKUSD
+# #     kraken_pair: BONKUSD       # Bonk / USD
+# #     live: false
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.0000002
+# #     slippage_bps: 8
+# #     fee_bps: 26
+# #     bull_bias_bps: 28
+# #     kelly_fraction: 0.10
+
+# #   # 21 ─ Injective – DeFi infrastructure
+# #   - symbol: INJUSD
+# #     kraken_pair: INJUSD        # Injective / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.7
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.20
+
+# #   # 22 ─ Jupiter – Solana DEX aggregator
+# #   - symbol: JUPUSD
+# #     kraken_pair: JUPUSD        # Jupiter / USD
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.02
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 14
+# #     kelly_fraction: 0.18
+
+# #   # 23 ─ Arbitrum – major L2 token
+# #   - symbol: ARBUSD
+# #     kraken_pair: ARBUSD        # Arbitrum / USD
+# #     interval_minutes: 1
+# #     horizon: 60
+# #     label_threshold: 0.025
+# #     slippage_bps: 6
+# #     fee_bps: 26
+# #     bull_bias_bps: 12
+# #     kelly_fraction: 0.18
+
+# #   # 24 ─ Filecoin – storage network
+# #   - symbol: FILUSD
+# #     kraken_pair: FILUSD        # Filecoin / USD
+# #     interval_minutes: 1
+# #     horizon: 90
+# #     label_threshold: 0.2
+# #     slippage_bps: 5
+# #     fee_bps: 26
+# #     bull_bias_bps: 10
+# #     kelly_fraction: 0.18
+
+# #   # 25 ─ Gala – gaming ecosystem token
+# #   - symbol: GALAUSD
+# #     kraken_pair: GALAUSD       # Gala / USD
+# #     interval_minutes: 1
+# #     horizon: 45
+# #     label_threshold: 0.001
+# #     slippage_bps: 7
+# #     fee_bps: 26
+# #     bull_bias_bps: 18
+# #     kelly_fraction: 0.15
+# # # # coins:
+# # # #   - symbol: XXBTZUSD
+# # # #     kraken_pair: XXBTZUSD     # Bitcoin / USD
+# # # #     interval_minutes: 1
+# # # #     horizon: 120
+# # # #     label_threshold: 50
+# # # #     slippage_bps: 3
+# # # #     fee_bps: 26
+# # # #     bull_bias_bps: 15
+# # # #     kelly_fraction: 0.25
+# # # #     api_key:  ${KRAKEN_API_KEY}
+# # # #     api_secret: ${KRAKEN_API_SECRET}
+
+# # # #   - symbol: XETHZUSD
+# # # #     kraken_pair: XETHZUSD     # Ethereum / USD
+# # # #     interval_minutes: 1
+# # # #     horizon: 90
+# # # #     label_threshold: 10
+# # # #     slippage_bps: 4
+# # # #     fee_bps: 26
+# # # #     bull_bias_bps: 10
+# # # #     kelly_fraction: 0.25
+
+# # # #   - symbol: XDGUSD
+# # # #     kraken_pair: DOGEUSD      # Dogecoin / USD !!
+# # # #     live: false
+# # # #     interval_minutes: 1
+# # # #     horizon: 60
+# # # #     label_threshold: 0.002
+# # # #     slippage_bps: 6
+# # # #     fee_bps: 26
+# # # #     bull_bias_bps: 20
+# # # #     kelly_fraction: 0.15
+# # # coins:
+# # #   # 1 ─ Bitcoin – deepest book, slower moves
+# # #   - symbol: XXBTZUSD
+# # #     kraken_pair: XXBTZUSD      # Bitcoin / USD
+# # #     interval_minutes: 1        # 1‑minute bars
+# # #     horizon: 120               # ≈2 h to capture a $50 pop
+# # #     label_threshold: 50        # $50 ≈ 7 bps at $70 k
+# # #     slippage_bps: 3            # heavy liquidity
+# # #     fee_bps: 26                # maker+ taker retail
+# # #     bull_bias_bps: 15          # modest BTC drift
+# # #     kelly_fraction: 0.25
+# # #     api_key:    ${KRAKEN_API_KEY}
+# # #     api_secret: ${KRAKEN_API_SECRET}
+
+# # #   # 2 ─ Ethereum – trades faster than BTC
+# # #   - symbol: XETHZUSD
+# # #     kraken_pair: XETHZUSD      # Ethereum / USD
+# # #     interval_minutes: 1
+# # #     horizon: 90                # ≈1.5 h for a $10 move
+# # #     label_threshold: 10        # $10 ≈ 18 bps at $3 k
+# # #     slippage_bps: 4
+# # #     fee_bps: 26
+# # #     bull_bias_bps: 10
+# # #     kelly_fraction: 0.25
+
+# # #   # 3 ─ Solana – popular alt with healthy depth
+# # #   - symbol: SOLUSD
+# # #     kraken_pair: SOLUSD        # Solana / USD
+# # #     interval_minutes: 1
+# # #     horizon: 60                # 1 h scalp window
+# # #     label_threshold: 1.0       # $1 ≈ 120 bps at $80
+# # #     slippage_bps: 5
+# # #     fee_bps: 26
+# # #     bull_bias_bps: 12
+# # #     kelly_fraction: 0.20
+
+# # #   # 4 ─ Dogecoin – meme coin, spiky
+# # #   - symbol: DOGEUSD
+# # #     kraken_pair: DOGEUSD       # Dogecoin / USD
+# # #     interval_minutes: 1
+# # #     horizon: 45                # impulses fade quickly
+# # #     label_threshold: 0.002     # 0.2 ¢ ≈ 110 bps at 0.18 $
+# # #     slippage_bps: 6
+# # #     fee_bps: 26
+# # #     bull_bias_bps: 20
+# # #     kelly_fraction: 0.15
+
+# # #   # 5 ─ Chainlink – mid‑cap oracle token
+# # #   - symbol: LINKUSD
+# # #     kraken_pair: LINKUSD       # Chainlink / USD
+# # #     interval_minutes: 1
+# # #     horizon: 60
+# # #     label_threshold: 0.25      # 25 ¢ ≈ 110 bps at $23
+# # #     slippage_bps: 5
+# # #     fee_bps: 26
+# # #     bull_bias_bps: 12
+# # #     kelly_fraction: 0.20
+
+# coins:
+#   - symbol: XXBTZUSD   # Bitcoin
+#     kraken_pair: XBTUSD
+#     interval_minutes: 1; horizon: 120; label_threshold: 50
+#     slippage_bps: 3; fee_bps: 26; bull_bias_bps: 15; kelly_fraction: 0.25
+
+#   - symbol: XETHZUSD   # Ethereum
+#     kraken_pair: ETHUSD
+#     interval_minutes: 1; horizon: 90; label_threshold: 10
+#     slippage_bps: 4; fee_bps: 26; bull_bias_bps: 10; kelly_fraction: 0.25
+
+#   - symbol: ADAUSD     # Cardano
+#     kraken_pair: ADAUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.008
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 12; kelly_fraction: 0.18
+
+#   - symbol: SOLUSD     # Solana
+#     kraken_pair: SOLUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 1.0
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 12; kelly_fraction: 0.20
+
+#   - symbol: DOTUSD     # Polkadot
+#     kraken_pair: DOTUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.14
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 12; kelly_fraction: 0.18
+
+#   - symbol: LINKUSD    # Chainlink
+#     kraken_pair: LINKUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.25
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 12; kelly_fraction: 0.20
+
+#   - symbol: AVAXUSD    # Avalanche
+#     kraken_pair: AVAXUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.8
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 12; kelly_fraction: 0.20
+
+#   - symbol: POLUSD     # Polygon
+#     kraken_pair: POLUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.015
+#     slippage_bps: 6; fee_bps: 26; bull_bias_bps: 12; kelly_fraction: 0.18
+
+#   - symbol: ATOMUSD    # Cosmos
+#     kraken_pair: ATOMUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.20
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 10; kelly_fraction: 0.18
+
+#   - symbol: XTZUSD     # Tezos
+#     kraken_pair: XTZUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.15
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 10; kelly_fraction: 0.18
+
+#   - symbol: UNIUSD     # UniSwap
+#     kraken_pair: UNIUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 0.30
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 10; kelly_fraction: 0.18
+
+#   - symbol: AAVEUSD    # Aave
+#     kraken_pair: AAVEUSD
+#     interval_minutes: 1; horizon: 60; label_threshold: 5.0
+#     slippage_bps: 5; fee_bps: 26; bull_bias_bps: 10; kelly_fraction: 0.18
+coins:
+  - symbol: XXBTZUSD   # Bitcoin
+    kraken_pair: XBTUSD
+    interval_minutes: 1
+    horizon: 120
+    label_threshold: 50
+    slippage_bps: 3
+    fee_bps: 26
+    bull_bias_bps: 15
+    kelly_fraction: 0.25
+
+  - symbol: XETHZUSD   # Ethereum
+    kraken_pair: ETHUSD
+    interval_minutes: 1
+    horizon: 90
+    label_threshold: 10
+    slippage_bps: 4
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.25
+
+  - symbol: FILUSD     # Filecoin – +23% in 10d, +4.3% in 15d
+    kraken_pair: FILUSD
+    interval_minutes: 1
+    horizon: 90
+    label_threshold: 0.20
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.18
+
+  - symbol: INJUSD     # Injective – +16.5% in 10d, +15.8% in 15d
+    kraken_pair: INJUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.70
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.20
+
+  - symbol: BCHUSD     # Bitcoin Cash – +11.6% in 10d, +6.6% in 15d
+    kraken_pair: BCHUSD
+    interval_minutes: 1
+    horizon: 90
+    label_threshold: 8.00
+    slippage_bps: 4
+    fee_bps: 26
+    bull_bias_bps: 8
+    kelly_fraction: 0.20
+
+  - symbol: POLUSD     # Polygon – +8.2% in 10d, +4.5% in 15d
+    kraken_pair: POLUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.015
+    slippage_bps: 6
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.18
+
+  - symbol: AVAXUSD    # Avalanche – +38% in 15d, +2.7% in 10d
+    kraken_pair: AVAXUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.80
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.20
+
+  - symbol: XRPUSD     # XRP – +5.2% in 15d, +4.3% in 10d
+    kraken_pair: XRPUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.010
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.20
+
+  - symbol: SUIUSD     # Sui – +5.2% in 10d
+    kraken_pair: SUIUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.030
+    slippage_bps: 6
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.18
+
+  - symbol: SEIUSD     # Sei – +1.5% in 10d
+    kraken_pair: SEIUSD
+    interval_minutes: 1
+    horizon: 45
+    label_threshold: 0.015
+    slippage_bps: 6
+    fee_bps: 26
+    bull_bias_bps: 15
+    kelly_fraction: 0.18
+
+  - symbol: UNIUSD     # UniSwap – midcap DeFi
+    kraken_pair: UNIUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.30
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.18
+
+  - symbol: AAVEUSD    # Aave – lending/borrowing flows
+    kraken_pair: AAVEUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 5.00
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.18
+
+  - symbol: ATOMUSD    # Cosmos – low correlation L1
+    kraken_pair: ATOMUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.20
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.18
+
+  - symbol: XTZUSD     # Tezos – smart-contract L1
+    kraken_pair: XTZUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.15
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 10
+    kelly_fraction: 0.18
+
+  - symbol: SOLUSD     # Solana – high throughput L1
+    kraken_pair: SOLUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 1.00
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.20
+
+  - symbol: LINKUSD    # Chainlink – oracle volume token
+    kraken_pair: LINKUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.25
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.20
+
+  - symbol: XLTCZUSD   # Litecoin – legacy PoW
+    kraken_pair: LTCUSD
+    interval_minutes: 1
+    horizon: 90
+    label_threshold: 1.50
+    slippage_bps: 4
+    fee_bps: 26
+    bull_bias_bps: 8
+    kelly_fraction: 0.20
+
+  - symbol: OPUSD      # Optimism – L2 rollup token
+    kraken_pair: OPUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.06
+    slippage_bps: 6
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.18
+
+  - symbol: ARBUSD     # Arbitrum – major L2 token
+    kraken_pair: ARBUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.025
+    slippage_bps: 6
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.18
+
+  - symbol: ADAUSD     # Cardano – retail favourite
+    kraken_pair: ADAUSD
+    interval_minutes: 1
+    horizon: 60
+    label_threshold: 0.008
+    slippage_bps: 5
+    fee_bps: 26
+    bull_bias_bps: 12
+    kelly_fraction: 0.18
